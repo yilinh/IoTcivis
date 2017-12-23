@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: author.aux
+The style file: abbrv.bst
+Database file #1: bib.bib
+Warning--can't use both author and editor fields in Fleischhacker2004
+Warning--can't use both author and editor fields in Kroes2008
+Warning--can't use both author and editor fields in Mody2006
+Warning--can't use both author and editor fields in Sawyer2014
+Warning--can't use both author and editor fields in Whitworth2009
+You've used 14 entries,
+            2118 wiz_defined-function locations,
+            602 strings with 6193 characters,
+and the built_in function-call counts, 4538 in all, are:
+= -- 435
+> -- 157
+< -- 10
++ -- 63
+- -- 48
+* -- 291
+:= -- 725
+add.period$ -- 43
+call.type$ -- 14
+change.case$ -- 59
+chr.to.int$ -- 0
+cite$ -- 19
+duplicate$ -- 211
+empty$ -- 398
+format.name$ -- 48
+if$ -- 1001
+int.to.chr$ -- 0
+int.to.str$ -- 14
+missing$ -- 19
+newline$ -- 73
+num.names$ -- 30
+pop$ -- 82
+preamble$ -- 1
+purify$ -- 52
+quote$ -- 0
+skip$ -- 144
+stack$ -- 0
+substring$ -- 268
+swap$ -- 63
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 40
+warning$ -- 5
+while$ -- 42
+width$ -- 16
+write$ -- 157
+(There were 5 warnings)
