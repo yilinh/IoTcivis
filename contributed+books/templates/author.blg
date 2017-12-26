@@ -1,6 +1,14 @@
 This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: author.aux
+White space in argument---line 33 of file author.aux
+ : \citation{need
+ :                more ref}
+I'm skipping whatever remains of this command
+White space in argument---line 36 of file author.aux
+ : \citation{need
+ :                more ref}
+I'm skipping whatever remains of this command
 The style file: abbrv.bst
 Database file #1: bib.bib
 Warning--can't use both author and editor fields in Fleischhacker2004
@@ -10,7 +18,7 @@ Warning--can't use both author and editor fields in Sawyer2014
 Warning--can't use both author and editor fields in Whitworth2009
 You've used 14 entries,
             2118 wiz_defined-function locations,
-            602 strings with 6193 characters,
+            602 strings with 6195 characters,
 and the built_in function-call counts, 4538 in all, are:
 = -- 435
 > -- 157
@@ -49,4 +57,4 @@ warning$ -- 5
 while$ -- 42
 width$ -- 16
 write$ -- 157
-(There were 5 warnings)
+(There were 2 error messages)
