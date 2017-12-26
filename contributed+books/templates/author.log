@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  23 DEC 2017 01:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  26 DEC 2017 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -386,25 +386,33 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
+ (./intro.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
- [1
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+
+[1
 
 
 
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Citation `need more ref' on page 2 undefined on input line 93.
-
-
-LaTeX Warning: Citation `need more ref' on page 2 undefined on input line 93.
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+(./designSTS.tex
+Underfull \vbox (badness 1038) detected at line 12
+ []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+
+LaTeX Warning: Citation `need more ref' on page 3 undefined on input line 29.
+
+
+LaTeX Warning: Citation `need more ref' on page 3 undefined on input line 29.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 []\OT1/ptm/m/n/10 see also https://medium.com/rettigs-notes/notes-on-sociotechn
 ical-
  []
 
+[3]) (./CIVIS.tex) (./concl.tex)
 Package epstopdf Info: Source file: <figure.eps>
 (epstopdf)                    date: 2007-06-29 01:00:00
 (epstopdf)                    size: 62739 bytes
@@ -413,33 +421,29 @@ Package epstopdf Info: Source file: <figure.eps>
 (epstopdf)                    size: 13913 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure-eps-converted-to.pd
 f figure.eps>
-(epstopdf)             \includegraphics on input line 144.
+(epstopdf)             \includegraphics on input line 81.
 Package epstopdf Info: Output file is already uptodate.
-<figure-eps-converted-to.pdf, id=11, 139.52126pt x 195.73125pt>
+
+<figure-eps-converted-to.pdf, id=15, 139.52126pt x 195.73125pt>
 File: figure-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figure-eps-converted-to.pdf>
-Package pdftex.def Info: figure-eps-converted-to.pdf used on input line 144.
+Package pdftex.def Info: figure-eps-converted-to.pdf used on input line 81.
 (pdftex.def)             Requested size: 90.68773pt x 127.22379pt.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 144.
-
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 81.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 
-LaTeX Warning: Reference `sec:2' on page 3 undefined on input line 148.
-
-[3]
-
-LaTeX Warning: Reference `sec:2' on page 4 undefined on input line 150.
+LaTeX Warning: Reference `sec:2' on page 4 undefined on input line 86.
 
 
-Overfull \hbox (0.61853pt too wide) in paragraph at lines 159--170
+Overfull \hbox (0.61853pt too wide) in paragraph at lines 95--106
 [][]
  []
 
-(./referenc.tex (./author.bbl [4 <./figure-eps-converted-to.pdf>]
+[4 <./figure-eps-converted-to.pdf>] (./referenc.tex (./author.bbl
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
@@ -450,19 +454,19 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2661 strings out of 493315
- 37368 string characters out of 6137904
- 106346 words of memory out of 5000000
+ 2673 strings out of 493315
+ 37480 string characters out of 6137904
+ 107347 words of memory out of 5000000
  6040 multiletter control sequences out of 15000+600000
  36305 words of font info for 72 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,12n,23p,1331b,286s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,12n,23p,1331b,267s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2013/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
 013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on author.pdf (5 pages, 80049 bytes).
+Output written on author.pdf (5 pages, 80531 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
