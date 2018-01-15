@@ -13,15 +13,15 @@
 
 
 \subsection{Understanding and Formulation of the Design Situation}
-% \begin{svgraybox}
-% [note by GP] Giacomo can write this part. To be expanded/integrated by all.
-% 
-% It will focus on CIVIS project by outlining its foundations (as fp7 R\&I project) and approach 
-% (interaction with local stakeholders + incremental design \& development of platform architecture). 
-% It will describe the inital, explicit objectives (+ simple rationale/roadmapp to achieve them) and 
-% it will provide an overview of the local contexts (from social, technical and energy point of view), 
-% in order to make clearer who are the involved stakeholders and their context.
-% \end{svgraybox}
+\begin{svgraybox}
+[note by GP] Giacomo can write this part. To be expanded/integrated by all.
+
+It will focus on CIVIS project by outlining its foundations (as fp7 R\&I project) and approach 
+(interaction with local stakeholders + incremental design \& development of platform architecture). 
+It will describe the inital, explicit objectives (+ simple rationale/roadmapp to achieve them) and 
+it will provide an overview of the local contexts (from social, technical and energy point of view), 
+in order to make clearer who are the involved stakeholders and their context.
+\end{svgraybox}
 
 Since more than two decades the ongoing and long-term energy transition shifted the energy domain
 towards decentralization, distributed production and renewable sources \cite{rifkin_third_2011,sovacool_how_2016}. Several general and intertwined aspects contribute to this transition: 
@@ -103,9 +103,9 @@ and apartment levels.
 
 \subsection{Design Process (or participatory design?)}
 
-% \begin{svgraybox}
-% [note by GP] Giacomo can write most of this part. 
-% \end{svgraybox}
+\begin{svgraybox}
+[note by GP] Giacomo can write most of this part. 
+\end{svgraybox}
 
 CIVIS design process was theory-driven, user-centered, collaborative and iterative. Indeed, a
 literature review was carried early in the project on the intervention strategies and the social smart
@@ -208,9 +208,9 @@ tips for energy conservation to the local contexts of use. These were in fact qu
 
 
 \subsection{Main Outcomes of the Design Process} % Older heading ``Products of Design Process''
-% \begin{svgraybox}
-% [note by GP] Do we include here the main outputs only (I would suggest yes), or also the intermediate artifacts (mockups, user stories, etc...) of the process?
-% \end{svgraybox}
+\begin{svgraybox}
+[note by GP] Do we include here the main outputs only (I would suggest yes), or also the intermediate artifacts (mockups, user stories, etc...) of the process?
+\end{svgraybox}
 
 \subsubsection{YouPower} %or similar heading
 \begin{svgraybox}
@@ -462,11 +462,11 @@ give feedback (Figure \ref{fig:form} b c) and invite friends. Users are awarded 
 
 
 \subsubsection{Community Engagement Approaches (or models)} %or another nicer subsec-heading
-% \begin{svgraybox}
-% [note by GP] Participatory energy budgeting process in trento + Training sessions 
-% in sweden (if you find any info about these Swe activities - from deliverables or kth publications, 
-% please send me a note).
-% \end{svgraybox}
+\begin{svgraybox}
+[note by GP] Participatory energy budgeting process in trento + Training sessions 
+in sweden (if you find any info about these Swe activities - from deliverables or kth publications, 
+please send me a note).
+\end{svgraybox}
 
 Another main outcome of the design process, which also reflects the potential richness of designing for large scale
 socio technical systems, rests at the level of community engagement. Indeed, approaches to the
@@ -480,18 +480,8 @@ emergence of the social dynamics connected to change of energy behaviour accompa
 and testing. 
 
 In Italy, a full fledged process named \textit{participatory energy budgeting} (PEB) \cite{capaccioli_exploring_2017,capaccioli_exploring_2016}
-was run for the management and allocation of an energy bonus, collected through the collective effort
-of shifting demand toward hours of production peaks. Similarly to the original participatory budgeting,
-the process aims at promoting participation and decision making for the allocation of part of a public budget, however,
-instead of using public funds, it used an `energy bonus' generated through community performances in load shifting. 
-Youpower's module on Demand-side management would help participants to maximize such performance and therefore, increas the energy bonus
-to be managed collectively at the end of the PEB experience.
-
-In Sweden, public evening meetings for housing association board members and energy managers were run
-to support collaborative use of the platform -- Housing Cooperative's module. Basically these events tried to
-facilitate knowledge sharing among attendees, and by creating shared content in the platform. Basically,
-best practices, recently adopted energy technologies or energy efficiency strategy were discussed,
-shared and created as content.
+was run to translate communities' intentions into real collective action -- demand-side management through load shifting
+in this case.
 
 \section{Discussions} %Shouldn't this be a separated file?
 \label{sec:disc}
