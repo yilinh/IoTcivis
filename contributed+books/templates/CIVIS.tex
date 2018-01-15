@@ -90,15 +90,15 @@ cooperatives\footnote{In Sweden, those who buy a home officially own the right t
 and must join a corresponding \textit{housing cooperative} that owns and maintains the estates. The 
 members of a cooperative annually elect a board that makes energy related decisions on behalf of 
 the members.}. Recruited households from the cooperatives and cooperatives' board members acted
-as key stakeholders here. \textbf{\textit{[NOTE: Do we want to include Fardala?]}} The other pilot 
-concerned a townhouse area in the outskirts of Stockholm: F\aa{}rdala. In this townhouse area the 
+as key stakeholders here. % Was YouPower released in Fardala at all? Do we want to explicitly talk about Fardala?
+The other pilot concerned a townhouse area in the outskirts of Stockholm: F\aa{}rdala. In this townhouse area the 
 local residents’ association and some of its member households participated to CIVIS.
 
 Ultimately, and at the general level, the design problem areas converged on two different sets of problems
-depending on the two countries. In Italy, the platform should integrate into energy communities to support
+depending on the two countries. In Italy, the platform had to integrate into energy communities to support
 efforts of demand-side management\footnote{\textit{E.g.} Moving peaks of electricity demand, towards peaks of local energy
 production or, in other words, improving the self-consumption capabilities of the electric cooperatives and
-their associate members}. In Sweden, should have supported knowledge sharing about energy management practices at building
+their associate members}. In Sweden, it had to support knowledge sharing about energy management practices at building
 and apartment levels.
 
 \subsection{Design Process (or participatory design?)}
@@ -110,7 +110,9 @@ and apartment levels.
 CIVIS design process was theory-driven, user-centered, collaborative and iterative. Indeed, a
 literature review was carried early in the project on the intervention strategies and the social smart
 grid applications for the promotion of environmental behavior change. This provided an initial, broad set
-of possibilities which had been iteratively refined and improved throughout the design process.
+of possibilities which had been iteratively, assessed, refined and improved throughout the design process with
+the collaboration and participation of basically all actors affected by it.
+
 The rationale behind this approach rested on the conviction that applying a user-centered and
 collaborative design process to the development of large socio-technical system has positive
 theoretical, practical and ethical implications \cite{Greenbaum1993,Boedker2004} by, for instance, increasing users engagement,
@@ -124,14 +126,15 @@ Due to the limited space, here we only streamline the main aspects of the proces
 \cite{poderi_disentangling_2017} for a detailed study on how the process shaped the main
 outcomes of CIVIS. % Do we want to refer to CIVIS as the project, or CIVIS platform or avoid alltogether to refer to it as an entity (once we have introduced it)
 
-In short, an initial set of platform features was first prototyped in simple, handcrafted mock-ups
-used as a basis for discussion. Afterwards, these underwent iterative rapid prototyping which
+In short, a costant work of alignment took place at an high level of abstraction mainly thanks to
+the use of user stories as key boundary object among stakeholders,
+expertises and local contexts. At a more concrete level, a set of platform features was prototyped in simple mock-ups
+and also used as a basis for discussion. These underwent iterative rapid prototyping which
 produced wireframes as better visual guides that could be more effectively communicated to end-users.
 Prior and after each iteration, exploratory activities on how to proceed and evaulation sessions for their outcomes
 took place in different venues and with different stakeholders -- \textit{e.g.} from participants in an environmental event \cite{Barssi2015} to
-stakeholders at test sites, and by groups of experts. At the same time, a costant work of alignment at an higher level of
-abstraction took place, primarily through the use of user stories as key boundary object among stakeholders,
-expertises and local contexts.
+stakeholders at test sites, and by groups of experts.
+
 
 \subsubsection{User stories}
 
@@ -173,7 +176,34 @@ versions at the end of every year of activity.
 \noindent Given time and resource constraints, the YouPower app can not be developed all-in-one cross-platform (for phones, tablets and computers). We chose to design the front-end as a hybrid mobile phone app, i.e. its UI design has layouts that suit phone screens, %The consideration is multi-fold. 
 %Western Europe has a large mobile phone internet user base\footnote{Between 2013 and 2017, the penetration rate of mobile phone internet users among mobile phone users will rise from 49.0\% to 77.8\%. See more at: \url{ http://www.emarketer.com/Article/Nearly-Half-of-Western-Europeans-Will-Use-Mobile-Web-This-Year/1010510\#sthash.AaVfsqIU.dpuf}}. Many surveys show that mobile apps have advantages such as creating deeper user engagement, easy sharing, among others\footnote{\url{https://infomedia.com/blog/the-advantages-of-mobile-apps/}, \url{https://econsultancy.com/blog/62326-85-of-consumers-favour-apps-over-mobile-websites/}}. This makes mobile app a good choice given the goal of the CIVIS platform. 
 since mobile apps can be more easily transformed to web browser versions, while the reverse is more difficult.
-The back-end of the YouPower platform will remain mostly the same independent of the front-end alternatives. 
+The back-end of the YouPower platform will remain mostly the same independent of the front-end alternatives.
+
+CIVIS platform is composed of (I) the \textit{energy sensor level services} mainly
+dealing with energy data collection; and (II) the \textit{energy data level and social
+level services} mainly dealing with energy data analytics as well as user, household and community management
+among others. 
+
+\begin{figure}[h!]
+\begin{center}\footnotesize
+	\includegraphics[width=1.0\linewidth]{img/civis_platform_overview.pdf}\\
+	DSO (Distribution System Operators),  SSL (Secure Sockets Layer)
+	\caption{YouPower Platform Overview}\label{fig:platform}
+\end{center}
+\end{figure}
+
+(I) \textit{Energy sensor level services:} CIVIS project installed hardware (smart plugs and sensors) and
+software required for appliance-level energy data collection. The hardware/software choices differ in the
+two sites due to local circumstances. For example, \textit{Smappee}\footnote{\url{http://www.smappee.com}}
+for 40 households in Stockholm, and \textit{CurrentCost}\footnote{\url{http://currentcost.com}} for 79
+households in Trento. Trento also installed Amperometric clamps for PV prodcution measures. 
+Household-level energy data is measured by smart meters and provided by local DSOs (Distribution System Operators). 
+
+(II) \textit{Energy data level and social level services:} These services are provided by the YouPower
+app and its back-end. The design of the YouPower app (and its back-end) consists of three self-contained
+composable parts: (A) \textit{House Cooperatives} (contextualized and deployed to the Stockholm test site);
+(B) \textit{Demand-Side Management} (contextualized and deployed
+to the Trento test site); and (C) \textit{Action Suggestions} (contextualized and deployed to both test sites).
+
 
 \paragraph{Housing Cooperatives}
 % \label{sect:brf}
