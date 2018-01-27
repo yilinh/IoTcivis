@@ -25,7 +25,7 @@
 Socio-technical systems are systems arising through encompassing people communicating with people whose interactions are mediated (at least partially) by technology rather than the natural world \cite{Whitworth2009}.
 The term ``socio-technical'' embodies both a research perspective and a subject matter \cite{Lee2001}. Facing a complex system, researchers from different disciplines often examine the system from their own perspectives. Engineers, for example, see hardware systems, computer scientists see information systems, psychologists see cognitive systems, sociologist see social systems -- in fact, no discipline has a monopoly on science and all those views are valid \cite{Whitworth2013}. 
 Figure~\ref{fig:sts_levels} uses the notion of system levels to illustrate this perspective difference in socio-technical systems \cite{Whitworth2009,Whitworth2013}. Notably, the levels in Figure~\ref{fig:sts_levels} are not different systems nor partitions of systems, but overlapping views of the same system corresponding to the engineering, computing, psychological and sociological perspectives \cite{Whitworth2009}. The top and bottom of the levels are open-ended, 
-as social groups can coalesce into larger entities such as organizations, cities, nations and beyond \cite{Whitworth2009a}, while physics and hardware can be studied in micro and nano scales. The system boundary and the boundaries of those views are not necessarily clear-cut (hence dawn as dashed lines). A socio-technical systems view is one that incorporates and meaningfully interconnects all levels of considerations: the upper two levels (Group/Community and Personal/Individual) together being social and the lower two (Information/Software and Physical/Hardware) technical. Each upper level can be seen as   ``arising'' or ``emerging'' from the lower levels. For example, personal cognitions ``emerge'' from information exchanges supported by software, which ``arises'' from hardware \cite{Whitworth2009}. The higher a level of view, the higher its degree of abstraction, and the less deterministic and predictive it becomes.  
+as social groups can coalesce into larger entities such as organizations, cities, nations and beyond \cite{Whitworth2009a}, while physics and hardware can be studied in micro, nano and smaller scales. The system boundary and the boundaries of those views are not necessarily clear-cut (hence dawn as dashed lines). A socio-technical systems view is one that incorporates and meaningfully interconnects all levels of considerations: the upper two levels (Group/Community and Personal/Individual) together being social and the lower two (Information/Software and Physical/Hardware) technical. Each upper level can be seen as   ``arising'' or ``emerging'' from the lower levels. For example, personal cognitions ``emerge'' from information exchanges supported by software, which ``arises'' from hardware \cite{Whitworth2009}. The higher a level of view, the higher its degree of abstraction, and the less deterministic and predictive it becomes.  
 % 
 With the levels of difference perspectives in mind, the socio-technical systems view can be articulated as the recognition of three fundamental properties as follows \cite{Sawyer2014}. 
 %
@@ -55,11 +55,11 @@ Large-scale socio-technical systems often are not designed as a whole by one tea
 
 A socio-technical systems view by definition advocates a systemic approach towards understanding including but not limited to information acquisition, diagnosis and analysis. Developing an understanding of the design problems or situation entails firstly looking into the roles, responsibilities, powers, interests and requirements of the stakeholders involved \cite{Checkland1981}. As will be discussed later in the section, iterations in a design process deepens this understanding. 
 Pragmatically, a designer can start with upper level (more abstract) views and dive into the lower level (less abstract) ones, i.e. from group/community level towards physical/hardware level as shown in Figure~\ref{fig:sts_levels}.
-At each level, the designer investigates questions such as what are the corresponding goals to be achieved (or problems to be tackled) \cite{Checkland1981,Waterson2002} and associated requirements to be fulfilled \cite{Whitworth2009a}, which social/technical elements (or components) are important to each level of views, how do the elements operate/behave individually and interact within and across the levels, and what are the possible outcomes of the interactions and in what context \cite{Baxter2011}. 
+At each level, the designer investigates questions such as what are the corresponding goals to achieve (or problems to tackle) \cite{Checkland1981,Waterson2002} and associated requirements to fulfil \cite{Whitworth2009a}, which social/technical elements (or components) are important to each level of views, how do the elements operate/behave individually, how do they interact within and across the levels, and what are the possible outcomes of the interactions and in what context \cite{Baxter2011}. 
 
 Table~\ref{tab:questions} provides a set of such questions categorized by the three socio-technical systems properties and associated to the levels of systems views. The questions are by no means exhaustive but serve as examples to orient ways of thinking during design. 
-Given the nature of socio-technical systems, the answers to many of such questions are context specific, influenced by dynamic situational and temporal conditions. \cite{Baxter2011,Norman2015}. This means the contextual information associated with the answers also need to be well studied and documented. 
-
+Given the nature of socio-technical systems, the answers to many of such questions are context specific, influenced by situational and temporal conditions \cite{Baxter2011,Norman2015}. This means the contextual information associated with the answers also need to be well studied and documented. 
+% 
 \begin{table}
 \caption{Examples of questions to investigate categorized by socio-technical systems properties and associated to levels of systems views }
 \label{tab:questions}       % Give a unique label
@@ -86,28 +86,26 @@ General $^b$ & All  &  --  & What is the level of resolution to use when describ
 &&& What are the criteria and metric of evaluating if and to what degree the desired goals are achieved and maintained? \\
 \noalign{\smallskip}\hline\noalign{\smallskip}
 \end{tabular}
-$^a$ Elements can also be weighted in scale, e.g. from \textit{important} (must be included in the study), to \textit{can be relevant} (can be included in the study), to \textit{least important} (can be excluded from the study).\\
+$^a$ Elements can also be weighted in scale, e.g. from \textit{important} (must be included in the study), to \textit{can be relevant} (can be included in the study), to \textit{not relevant} (can be excluded from the study).\\
 $^b$ It concerns all three properties above. 
 \end{table}
-
-
-
+%
+%
 \begin{figure}
 \sidecaption
-\includegraphics[scale=.66]{img/sts_requirements.pdf}
+\includegraphics[scale=.68]{img/sts_requirements.pdf}
 \caption{Levels of socio-technical requirements \cite{Whitworth2009a}}
 \label{fig:sts_requirements} 
 \end{figure}
+% 
+%
+In a socio-technical approach, social requirements must become part of technical design \cite{Whitworth2014}. Figure~\ref{fig:sts_requirements} illustrates the relation of requirements at different levels \cite{Whitworth2009a}. Each level of view unveils requirements which cumulate level by level. The requirements at a level affect not only that level but all those below it \cite{Whitworth2009a}. For example, a communal requirement may add new requirements at personal level which in term affects software and hardware requirements. When a technical design fails to fulfil requirements derived from the personal or social level, there is a deficit  between  what  society  needs  and  what technology does. This is when the ``social-technical  gap''  emerges \cite{Whitworth2014}. 
 
-In a socio-technical approach, social requirements must become part of technical design \cite{Whitworth2014}. This is well illustrated in Figure~\ref{fig:sts_requirements} \cite{Whitworth2009a}.
+As mentioned earlier, large-scale socio-technical systems are often``systems of evolution'' rather than ``systems of revolution'' \cite{Baxter2011,Norman2015}. Significant changes in a system should be accompanied by a well designed and managed change process where feedback is returned for analysis and adaptation \cite{Baxter2011}. For this, a good understanding of the existing system and work/operation processes is necessary to design and plan the change process. Many core difficulties in complex projects stem from implementation of the design in the real world, which can completely derail the entire effort \cite{Norman2015}. Designers therefore need to address the possible impediments to implementation already from the beginning, and they must play an active role in implementation, and develop solutions through small incremental steps \cite{Norman2015}.
 
 \begin{svgraybox}
 
--- description of figure 2. A ``social-technical  gap''  emerges when there is a  deficit  between  what  society  needs  and  what technology does \cite{Whitworth2014}. 
 
--- as mentioned earlier, socio-technical systems are systems of ``evolution'' rather than systems of ``revolution''. designers therefore also need to design and plan the change process \cite{Baxter2011}
-
--- many core difficulties stem from implementation of the design in the real world. that designers cannot stop at the design stage: they must play an active role in implementation, and develop solutions through small, incremental steps to reduce political, social, and cultural disruptions. \cite{Norman2015}
 
 
 \runinhead{Design Process} The design process of socio-technical systems can be seen as a decision-making process where the problem owners, shareholders, users, and oteher stakeholders participate to represent their interests. Often, the design process is so complex that the process itself can be deemed as a socio-technical system \cite{Baxter2011}. 
