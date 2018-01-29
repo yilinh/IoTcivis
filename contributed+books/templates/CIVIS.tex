@@ -1,28 +1,6 @@
 \section{CIVIS: A Community-Oriented Design in Future Smart Grids}
 \label{sec:civis}
 
-% \begin{svgraybox}
-% Discuss the CIVIS project making relation to the previous theory section. 
-% 
-% The discussion shall not be limited to the app YouPower, but also the other efforts made around it 
-% (if they are related to the discussions in the previous section), e.g. the user stories, focus 
-% groups workshops, interviews, participatory budgeting, etc. 
-% 
-% Use the YouPower paper as much as possible. 
-% \end{svgraybox}
-
-
-\subsection{Understanding and Formulation of the Design Situation}
-% \begin{svgraybox}
-% [note by GP] Giacomo can write this part. To be expanded/integrated by all.
-% 
-% It will focus on CIVIS project by outlining its foundations (as fp7 R\&I project) and approach 
-% (interaction with local stakeholders + incremental design \& development of platform architecture). 
-% It will describe the inital, explicit objectives (+ simple rationale/roadmapp to achieve them) and 
-% it will provide an overview of the local contexts (from social, technical and energy point of view), 
-% in order to make clearer who are the involved stakeholders and their context.
-% \end{svgraybox}
-
 Since more than two decades the ongoing and long-term energy transition shifted the energy domain
 towards decentralization, distributed production and renewable sources \cite{rifkin_third_2011,sovacool_how_2016}. Several general and intertwined aspects contribute to this transition: 
 (\textit{i}) the awareness of the inherent complexities that exist among energy systems, societies 
@@ -35,7 +13,7 @@ chain, such as energy cooperatives and energy communities \cite{viardot_role_201
 transformation of old ones, such as housing associations, and amateur energy managers 
 \cite{hasselqvist_linking_2016}.
 
-CIVIS work took place under European Union’s interest to foster energy transition by tackling the 
+CIVIS work took place under European Union’s interest to support energy transition by tackling the 
 so called societal challenge of efficient energy. The vision of smart grids and the use of ICTs were 
 the main drivers for the project's ambition to reconfigure the relationships among traditional and 
 emerging actors in the energy value chain -- \textit{i.e.} distributors, producers, retailers and 
@@ -51,6 +29,20 @@ exploratory phase, used to align CIVIS’ overarching objectives with the local 
 (from data monitoring devices to the front-end applications); and (\textit{iii}) a final testing 
 phase which included the full scale deployment of the platform in the pilots for usage and 
 assessment purposes.
+Therefore, in CIVIS the possibilities for a socio-technical approach were present by design
+in the formal structure and description of the project.
+Furthermore, the composition of the consortium included the diversity of disciplinary backgrounds
+and profiles -- \textit{i.e.} engineers, computer scientists, designers, and sociologists --
+that was necessary for tackling the evolving shaping and
+understanding of the socio-technical system from multiple perspectives (See Fig. \ref{fig:sts_levels}).
+
+Below we clarify how CIVIS adopted %is the right word?? (used?)
+a socio-technical approach in practice. We provide an overview of the context of the design situation,
+we summarize the collaborative design process that was put in place, and we present
+the main outcomes, which allow to appreciate CIVIS socio-technical system both in
+its technical and social levels.  
+
+\subsection{Understanding and Formulation of the Design Situation}
 
 Concretely, CIVIS' platform goals were to increase energy awareness, by making energy behaviours more visible, to promote
 environmental and social values, to increase citizens' know-how about sustainable consumption, and to help
@@ -72,7 +64,7 @@ However, we also wanted the overarching purpose, the underlying infrastructure a
 \textbf{CIVIS Platform} \textit{[how do we refer to it? as platform or as STS?]} to be able to integrate 
 into rather different contexts, to meet diverse needs and expectations as well as to serve various 
 types of user. This is why, in CIVIS, the pilot sites were understood more as sources of collaborative design and development,
-rather than just as possive recipients of a technology to be tested.  
+rather than just as passive recipients of a technology to be tested.  
 
 Italy and Sweden hosted two pilots each. In the former, the work focused on cooperative owned 
 electricity provision. In the latter, it concerned housing cooperative's energy management in 
@@ -156,7 +148,7 @@ Due to the limited space, here we only streamline the main aspects of the proces
 \cite{poderi_disentangling_2017} for a detailed study on how the process shaped the main
 outcomes of CIVIS. % Do we want to refer to CIVIS as the project, or CIVIS platform or avoid alltogether to refer to it as an entity (once we have introduced it)
 
-In short, a costant work of alignment took place at an high level of abstraction mainly thanks to
+In short, a constant work of alignment took place at an high level of abstraction mainly thanks to
 the use of user stories as key boundary object among stakeholders,
 expertises and local contexts. At a more concrete level, a set of platform features was prototyped in simple mock-ups
 and also used as a basis for discussion. These underwent iterative rapid prototyping which
@@ -182,6 +174,24 @@ versions at the end of every year of activity.
 
 \subsubsection{Stakeholders meetings} % MAYBE TURN THESE INTO \PARAGRAPHS ?
 
+%
+\begin{figure}
+      \begin{center}
+        \begin{minipage}[htb]{0.43\linewidth}    
+        \includegraphics[width=1\linewidth]{img/Stkh_plenary1.jpg}
+        \end{minipage}
+ 	\hfill 
+         \begin{minipage}[htb]{0.55\linewidth}    
+	        \includegraphics[width=1\linewidth]{img/Stkh_meeting_tou_crop.jpg} 
+                \end{minipage}
+      \end{center}
+    \caption{(a) A moment during one of the first project plenary meetings, where local stakeholders from the pilot sites took part; (b) Stakeholder meeting between some of the technical project partners and
+    local stakeholders in Italy, to discuss the aspects of demand-side management.
+}
+\label{fig:stkh_meetings}
+\end{figure}
+%
+
 These were held primarily at the level of the pilot sites, by involving CIVIS technical figures and the
 key local energy stakeholders. Roughly, they were held quarterly, although at the project's onset and during
 the most intense `design phase' of the work, they occurred more frequently.
@@ -201,13 +211,22 @@ also played an important role.
 %
 
 
-\subsubsection{Exploratory and Evaluation Focus groups} % MAYBE TURN THESE INTO \PARAGRAPHS ?
+\subsubsection{Focus groups} % MAYBE TURN THESE INTO \PARAGRAPHS ?
+
+%
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.8\linewidth]{img/FocusGroup_TN.jpg}
+	\caption{An initial moment of an exploratory focus group in Italy.}
+	\label{fig:focusgroups}
+\end{figure}
+
 
 These activities involved potential and actual participant household members, recruited for the project, and they
-were run as collective discussios. Usually they lasted around 2 hours and included between 6 and 8 discussants.
+were run as collective discussions. Usually they lasted around 2 hours and included between 6 and 8 discussants.
 In case of the exploratory meetings, the scope of the discussion was intentionally broad and it aimed at revealing possible latent
 needs or expectations, as well as discussing explicit ones. More importantly these were used to get first-hand knowledge
-about the social and cultural evnironment where the platform was to be deployed. On the contrary, the evaluation discussions
+about the social and cultural environment where the platform was to be deployed. On the contrary, the evaluation discussions
 had more specific focuses and involved concrete artifacts (\textit{e.g.} an interface mock-up or app prototype)
 as a basis.
 
@@ -222,6 +241,22 @@ is published in \cite{capaccioli_exploring_2017}.}
 
 
 \subsubsection{Design workshops} % MAYBE TURN THESE INTO \PARAGRAPHS ?
+
+\begin{figure}
+      \begin{center}
+        \begin{minipage}[htb]{0.43\linewidth}    
+        \includegraphics[width=1\linewidth]{img/Workshop_userreq1.jpg}
+        \end{minipage}
+ 	\hfill 
+         \begin{minipage}[htb]{0.55\linewidth}    
+	        \includegraphics[width=1\linewidth]{img/Workshop_userreq2.jpg} 
+                \end{minipage}
+      \end{center}
+    \caption{(a) Beginning of group activities in one of the first workshops held in Italy and focusing
+    on user requirements; (b) One of the group outcomes for mapping energy consumption habits at home. 
+}
+\label{fig:workshops}
+\end{figure}
 
 These workshops involved concrete, hands-on activities done primarily with participant household members.
 Occasionally a few workshops took place among project partners or had a broader target.
