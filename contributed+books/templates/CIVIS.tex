@@ -1,28 +1,6 @@
 \section{CIVIS: A Community-Oriented Design in Future Smart Grids}
 \label{sec:civis}
 
-% \begin{svgraybox}
-% Discuss the CIVIS project making relation to the previous theory section. 
-% 
-% The discussion shall not be limited to the app YouPower, but also the other efforts made around it 
-% (if they are related to the discussions in the previous section), e.g. the user stories, focus 
-% groups workshops, interviews, participatory budgeting, etc. 
-% 
-% Use the YouPower paper as much as possible. 
-% \end{svgraybox}
-
-
-\subsection{Understanding and Formulation of the Design Situation}
-% \begin{svgraybox}
-% [note by GP] Giacomo can write this part. To be expanded/integrated by all.
-% 
-% It will focus on CIVIS project by outlining its foundations (as fp7 R\&I project) and approach 
-% (interaction with local stakeholders + incremental design \& development of platform architecture). 
-% It will describe the inital, explicit objectives (+ simple rationale/roadmapp to achieve them) and 
-% it will provide an overview of the local contexts (from social, technical and energy point of view), 
-% in order to make clearer who are the involved stakeholders and their context.
-% \end{svgraybox}
-
 Since more than two decades the ongoing and long-term energy transition shifted the energy domain
 towards decentralization, distributed production and renewable sources \cite{rifkin_third_2011,sovacool_how_2016}. Several general and intertwined aspects contribute to this transition: 
 (\textit{i}) the awareness of the inherent complexities that exist among energy systems, societies 
@@ -35,7 +13,7 @@ chain, such as energy cooperatives and energy communities \cite{viardot_role_201
 transformation of old ones, such as housing associations, and amateur energy managers 
 \cite{hasselqvist_linking_2016}.
 
-CIVIS work took place under European Union’s interest to foster energy transition by tackling the 
+CIVIS work took place under European Union’s interest to support energy transition by tackling the 
 so called societal challenge of efficient energy. The vision of smart grids and the use of ICTs were 
 the main drivers for the project's ambition to reconfigure the relationships among traditional and 
 emerging actors in the energy value chain -- \textit{i.e.} distributors, producers, retailers and 
@@ -51,8 +29,22 @@ exploratory phase, used to align CIVIS’ overarching objectives with the local 
 (from data monitoring devices to the front-end applications); and (\textit{iii}) a final testing 
 phase which included the full scale deployment of the platform in the pilots for usage and 
 assessment purposes.
+Therefore, in CIVIS the possibilities for a socio-technical approach were present by design
+in the formal structure and description of the project.
+Furthermore, the composition of the consortium included the diversity of disciplinary backgrounds
+and profiles -- \textit{i.e.} engineers, computer scientists, designers, and sociologists --
+that was necessary for tackling the evolving shaping and
+understanding of the socio-technical system from multiple perspectives (See Fig. \ref{fig:sts_levels}).
 
-Concretely, CIVIS' platform goals were to increase energy awareness, by making energy behaviours more visible, to promote
+Below we clarify how CIVIS adopted %is the right word?? (used?)
+a socio-technical approach in practice. We provide an overview of the context of the design situation,
+we summarize the collaborative design process that was put in place, and we present
+the main outcomes, which allow to appreciate CIVIS socio-technical system both in
+its technical and social levels.  
+
+\subsection{Understanding and Formulation of the Design Situation}
+
+Formally, the goals of CIVIS platform were to increase energy awareness, by making energy behaviours more visible, to promote
 environmental and social values, to increase citizens' know-how about sustainable consumption, and to help
 them in improving energy behaviours in their everyday life and together with local communities.
 
@@ -69,14 +61,14 @@ Finally, works that visualize smart meter and appliance-level consumption data t
 feedback among households are also increasing \cite{Petkov2011,Weiss2012,Dillahunt2014}.
 
 However, we also wanted the overarching purpose, the underlying infrastructure and the core features of 
-\textbf{CIVIS Platform} \textit{[how do we refer to it? as platform or as STS?]} to be able to integrate 
+CIVIS Platform to be able to integrate 
 into rather different contexts, to meet diverse needs and expectations as well as to serve various 
 types of user. This is why, in CIVIS, the pilot sites were understood more as sources of collaborative design and development,
-rather than just as possive recipients of a technology to be tested.  
+rather than just as passive recipients of a technology to be tested.  
 
 Italy and Sweden hosted two pilots each. In the former, the work focused on cooperative owned 
 electricity provision. In the latter, it concerned housing cooperative's energy management in 
-apartment buildings. 
+apartment buildings and townhouses.  
 In brief, the two municipalities of Storo and San Lorenzo, in Trentino Alto-Adige (a region in 
 north-west Italy), included the Italian pilots. Here, two electric cooperatives, producing and 
 selling 100\% renewable energy to their associate members, together with two samples of recruited 
@@ -86,8 +78,7 @@ associations participated as stakeholders in various phases of the project, by p
 and support for technical aspects related to energy and households engagement.
 Similarly, the area of Stockholm hosted the two Swedish pilots. One involved the residential and 
 central neighbourhood of Hammarby Sj\"{o}stad, which included apartment buildings owned by housing 
-cooperatives\footnote{In Sweden, those who buy a home officially own the right to inhabit the estate 
-and must join a corresponding \textit{housing cooperative} that owns and maintains the estates. The 
+cooperatives\footnote{In Sweden, those who buy an apartment must join a corresponding \textit{housing cooperative} that owns and maintains the estates. The 
 members of a cooperative annually elect a board that makes energy related decisions on behalf of 
 the members.}. Recruited households from the cooperatives and cooperatives' board members acted
 as key stakeholders here. % Was YouPower released in Fardala at all? Do we want to explicitly talk about Fardala?
@@ -98,11 +89,9 @@ Ultimately, and at the general level, the design problem areas converged on two 
 depending on the two countries. In Italy, the platform had to integrate into energy communities to support
 efforts of demand-side management\footnote{\textit{E.g.} Moving peaks of electricity demand, towards peaks of local energy
 production or, in other words, improving the self-consumption capabilities of the electric cooperatives and
-their associate members}. In Sweden, it had to support knowledge sharing about energy management practices at building
-and apartment levels.
+their associate members}. In Sweden, it had to support knowledge sharing about energy management practices at building and apartment levels.
 
-TODO
-
+% Does this "Evaluation" belong here? I don't think so (gp)
 \paragraph{Evaluation} After a successful deployment, YouPower was evaluated in the test sites in Sweden and Italy. We collected in parallel, the data on user engagement with the app and on energy prosumption. The initial evaluation revealed how the Trentino residents engaged with a weather feature that predicts the solar energy production levels, while the Stockholm housing association managers used the community features to engage with the residents and connect with other managers. 
 
 Some of the tangible results in the Italian test site include the savings in the electricity and heating energy spent or produced \cite{civics}:
@@ -131,19 +120,18 @@ To assess the long term effectiveness of the CIVIS social energy intervention,  
 
 \paragraph{Limitations} The initial lack of data due to acquisition and privacy issues in the residential setting was among the main limitation in this project. We installed the IoT sensors to collect additionally needed data for using the introduced app. 
 
-\subsection{Design Process (or participatory design?)}
+\subsection{Collaborative Design Process}
 
 % \begin{svgraybox}
 % [note by GP] Giacomo can write most of this part. 
 % \end{svgraybox}
 
-CIVIS design process was theory-driven, user-centered, collaborative and iterative. Indeed, a
+CIVIS design process was theory-driven, human-centered, collaborative and iterative. Indeed, a
 literature review was carried early in the project on the intervention strategies and the social smart
 grid applications for the promotion of environmental behavior change. This provided an initial, broad set
-of possibilities which had been iteratively, assessed, refined and improved throughout the design process with
-the collaboration and participation of basically all actors affected by it.
+of possibilities which had been iteratively, assessed, refined and improved throughout the design process with the collaboration and participation of basically all actors affected by it.
 
-The rationale behind this approach rested on the conviction that applying a user-centered and
+The rationale behind this approach rested on the conviction that applying a human-centered and
 collaborative design process to the development of large socio-technical system has positive
 theoretical, practical and ethical implications \cite{Greenbaum1993,Boedker2004} by, for instance, increasing users engagement,
 usability and integration into existing local conditions \cite{Brynjarsdottir2012,Dick2012,Pierce2012}.
@@ -156,14 +144,6 @@ Due to the limited space, here we only streamline the main aspects of the proces
 \cite{poderi_disentangling_2017} for a detailed study on how the process shaped the main
 outcomes of CIVIS. % Do we want to refer to CIVIS as the project, or CIVIS platform or avoid alltogether to refer to it as an entity (once we have introduced it)
 
-In short, a costant work of alignment took place at an high level of abstraction mainly thanks to
-the use of user stories as key boundary object among stakeholders,
-expertises and local contexts. At a more concrete level, a set of platform features was prototyped in simple mock-ups
-and also used as a basis for discussion. These underwent iterative rapid prototyping which
-produced wireframes as better visual guides that could be more effectively communicated to end-users.
-Prior and after each iteration, exploratory activities on how to proceed and evaulation sessions for their outcomes
-took place in different venues and with different stakeholders -- \textit{e.g.} from participants in
-an environmental event \cite{Barssi2015} to stakeholders at test sites, and by groups of experts.
 
 
 \subsubsection{User stories}
@@ -182,6 +162,24 @@ versions at the end of every year of activity.
 
 \subsubsection{Stakeholders meetings} % MAYBE TURN THESE INTO \PARAGRAPHS ?
 
+%
+\begin{figure}
+      \begin{center}
+        \begin{minipage}[htb]{0.43\linewidth}    
+        \includegraphics[width=1\linewidth]{img/Stkh_plenary1.jpg}
+        \end{minipage}
+ 	\hfill 
+         \begin{minipage}[htb]{0.55\linewidth}    
+	        \includegraphics[width=1\linewidth]{img/Stkh_meeting_tou_crop.jpg} 
+                \end{minipage}
+      \end{center}
+    \caption{(a) A moment during one of the first project plenary meetings, where local stakeholders from the pilot sites took part; (b) Stakeholder meeting between some of the technical project partners and
+    local stakeholders in Italy, to discuss the aspects of demand-side management.
+}
+\label{fig:stkh_meetings}
+\end{figure}
+%
+
 These were held primarily at the level of the pilot sites, by involving CIVIS technical figures and the
 key local energy stakeholders. Roughly, they were held quarterly, although at the project's onset and during
 the most intense `design phase' of the work, they occurred more frequently.
@@ -191,7 +189,8 @@ for understanding the feasibility and rationality of the choices for the social 
 For instance, it required long discussions and negotiation the identification and selection of the energy monitoring devices to be installed in
 participants households for enabling the proper granularity and availability of energy data. Indeed,
 the suitability of these devices could not be assessed at a technical level only (\textit{e.g.} cost/efficiency, type of data,
-reliability, protocols). Typology of end-users, acceptability, and housing conditions \footnote{ In italy, participants were older and less tech-savy, living in own
+reliability, protocols).
+The typology of end-users and the housing conditions \footnote{In italy, participants were older and less tech-savy, living in own
 independent, large houses; while in Sweden they were relatively younger and more tech-savy, but living in smaller apartments in residential buildings.}
 also played an important role. 
 
@@ -201,19 +200,28 @@ also played an important role.
 %
 
 
-\subsubsection{Exploratory and Evaluation Focus groups} % MAYBE TURN THESE INTO \PARAGRAPHS ?
+\subsubsection{Focus groups} % MAYBE TURN THESE INTO \PARAGRAPHS ?
+
+%
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=.8\linewidth]{img/FocusGroup_TN.jpg}
+	\caption{An initial moment of an exploratory focus group in Italy.}
+	\label{fig:focusgroups}
+\end{figure}
+
 
 These activities involved potential and actual participant household members, recruited for the project, and they
-were run as collective discussios. Usually they lasted around 2 hours and included between 6 and 8 discussants.
+were run as collective discussions. Usually they lasted around 2 hours and included between 6 and 8 discussants.
 In case of the exploratory meetings, the scope of the discussion was intentionally broad and it aimed at revealing possible latent
 needs or expectations, as well as discussing explicit ones. More importantly these were used to get first-hand knowledge
-about the social and cultural evnironment where the platform was to be deployed. On the contrary, the evaluation discussions
+about the social and cultural environment where the platform was to be deployed. On the contrary, the evaluation discussions
 had more specific focuses and involved concrete artifacts (\textit{e.g.} an interface mock-up or app prototype)
 as a basis.
 
 For instance, exploratory meetings helped us in putting in due perspective some of the features we initially taught
 would be welcomed by end-users, such as `sharing' of energy performances or measurements typical of social network platforms.
-In our contexts, it was both difficult to gfrasp the meaning of such a feature, bt it also raised
+In our contexts, it was both difficult to gfrasp the meaning of such a feature, but it also raised
 some concerns related to privacy. At the same time, the intermediate evaluation activities allowed us to spot some
 limitations of our data visualizations (\textit{e.g.} oversimplifications of energy data through some charts),
 and of the engagement and participatory process itself\footnote{A study of the end-users appreciation of the engagement and participatory process in the Italian pilots
@@ -222,6 +230,22 @@ is published in \cite{capaccioli_exploring_2017}.}
 
 
 \subsubsection{Design workshops} % MAYBE TURN THESE INTO \PARAGRAPHS ?
+
+\begin{figure}
+      \begin{center}
+        \begin{minipage}[htb]{0.43\linewidth}    
+        \includegraphics[width=1\linewidth]{img/Workshop_userreq1.jpg}
+        \end{minipage}
+ 	\hfill 
+         \begin{minipage}[htb]{0.55\linewidth}    
+	        \includegraphics[width=1\linewidth]{img/Workshop_userreq2.jpg} 
+                \end{minipage}
+      \end{center}
+    \caption{(a) Beginning of group activities in one of the first workshops held in Italy and focusing
+    on user requirements; (b) One of the group outcomes for mapping energy consumption habits at home. 
+}
+\label{fig:workshops}
+\end{figure}
 
 These workshops involved concrete, hands-on activities done primarily with participant household members.
 Occasionally a few workshops took place among project partners or had a broader target.
@@ -234,8 +258,20 @@ improving and tailoring the interface layout.
 For instance, for the module of \textit{Action suggestions}, the workshops were relevant for adjusting the various
 tips for energy conservation to the local contexts of use. These were in fact quite different between the two countries,
  and certain tips had no meaning when delivered to one or another country or they needed a different
- rationale for their presentation.
+ rationale for their presentation.\\
+ 
+In short, a constant work of alignment took place at an high level of abstraction mainly thanks to
+the use of user stories as key boundary object among stakeholders,
+expertises and local contexts.
+At a more concrete level, a set of platform features was prototyped in simple mock-ups
+and also used as a basis for discussion. These underwent iterative rapid prototyping which
+produced wireframes as better visual guides that could be more effectively communicated to end-users.
+Prior and after each iteration, exploratory activities on how to proceed and evaluation sessions for their outcomes took place in different venues and with different stakeholders.
+TABLE X provide a simplified overview on the relationships among the various activities of the collaborative design process and their influence on CIVIS platform design - viewed through the perspective of a socio-technical approach. 
 
+\begin{svgraybox}
+Insert here table provided by GP
+\end{svgraybox}
 
 \subsection{Main Outcomes of the Design Process} % Older heading ``Products of Design Process''
 % \begin{svgraybox}
@@ -491,37 +527,51 @@ give feedback (Figure \ref{fig:form} b c) and invite friends. Users are awarded 
 
 
 
-\subsubsection{Community Engagement Approaches (or models)} %or another nicer subsec-heading
+\subsubsection{Community Engagement Approaches} %or another nicer subsec-heading
 % \begin{svgraybox}
 % [note by GP] Participatory energy budgeting process in trento + Training sessions 
 % in sweden (if you find any info about these Swe activities - from deliverables or kth publications, 
 % please send me a note).
 % \end{svgraybox}
 
-Another main outcome of the design process, which also reflects the potential richness of designing for large scale
-socio technical systems, rests at the level of community engagement. Indeed, approaches to the
-use, adoption and appropriation of the platform resulted for the pilots in the two countries. Indeed, 
-the ambition to foster energy behavioural changes at the collective level of communities (or neighborhoods),
-instead of simply aiming for individual technology adoption, it made clear the need to design for
+Another main outcome of the design process, which also reflects the potential richness of designing for large scale socio technical systems, rests at the level of community engagement. Indeed, approaches to the
+use, adoption and appropriation of the platform resulted for the pilots in the two countries. 
+The ambition to foster energy behavioural changes at the collective level of communities (or neighborhoods),
+instead of simply aiming for technology adoption at individual level, it made clear the need to design for
 this too.
 
-In the two national contexts, two different engagement processes which tried to stimulate the
-emergence of the social dynamics connected to change of energy behaviour accompanied the technology deployment
-and testing. 
+In the two national contexts, two different engagement processes accompanied the deployment and testing of the technology. These tried to stimulate the emergence of the social dynamics connected to change of energy behaviour. 
 
-In Italy, a full fledged process named \textit{participatory energy budgeting} (PEB) \cite{capaccioli_exploring_2017,capaccioli_exploring_2016}
-was run for the management and allocation of an energy bonus, collected through the collective effort
-of shifting demand toward hours of production peaks. Similarly to the original participatory budgeting,
-the process aims at promoting participation and decision making for the allocation of part of a public budget, however,
-instead of using public funds, it used an `energy bonus' generated through community performances in load shifting. 
-Youpower's module on Demand-side management would help participants to maximize such performance and therefore, increas the energy bonus
-to be managed collectively at the end of the PEB experience.
+In Italy, a full fledged process named \textit{Participatory Energy Budgeting} (PEB) \cite{capaccioli_exploring_2017,capaccioli_exploring_2016}
+was run for the management and allocation of an energy bonus which was
+collected through the collective effort of shifting electric energy demand
+toward hours of local production peaks.
+PEB had the twofold goal of subsidizing people's efforts in demand-side management
+and empowering them to handle their achievements in a collective and transparent way.
+In practice, the PEB and the demand-side management module of YouPower
+were thought and designed to act in synergy and 'reinforce' each other.
 
-In Sweden, public evening meetings for housing association board members and energy managers were run
-to support collaborative use of the platform -- Housing Cooperative's module. Basically these events tried to
-facilitate knowledge sharing among attendees, and by creating shared content in the platform. Basically,
-best practices, recently adopted energy technologies or energy efficiency strategy were discussed,
-shared and created as content.
+Simply speaking, PEB is a policy frame that relies on a call for tender that
+defines: the energy budget to be administered;
+the criteria and procedures to submit proposals for funds request; the procedures
+to evaluate, select and award the winning proposals; and a roadmap for the process development. 
+Basically, grounded on the community funds model of participatory budgeting \cite{Ganuza2012,Sintomer2008},
+PEB promoted engagement and allowed collective decision
+making around the allocation of an `energy bonus'. Such bonus
+was linked to the community performances related to demand-side management:
+the more people consumed energy during peaks of local production - foretold and displayed
+with 'green smileys' in YouPower - the more the energy bonus grew.
+
+PEB can be considered a main outcome of the design process in the Italian sites, because 
+the idea to manage collectively the energy savings emerged during the first exploratory focus groups,
+and throughout the fist two project years, such idea idea has been refined and negotiated into
+a full-fledged policy frame, with the participation of recruited households and the endorsement
+of the electric consortia. For instance, while the latter vouched for the legitimacy of the process
+and made the 'energy bonus' practically available, the former defined key aspects of PEB frame such as the criteria for eligibility and those ones for final evaluation and award.  
+
+
+% TEXT BY HANNA H
+In Sweden, the engagement work and app design aimed to complement the already existing community efforts to address energy issues. Meetings were arranged with housing cooperative representatives to discuss experiences of energy reduction actions and how those could be shared through the Youpower app. Furthermore, the app was used as a probe to discuss housing cooperative energy management with other stakeholders who may influence housing cooperative energy use, such as building managers, energy providers, and energy advisers. These stakeholders were already working with housing cooperatives and many had ambitions of supporting housing cooperatives in reducing energy use. By engaging with these stakeholders and learning about their processes and goals, we identified opportunities for the Youpower app, or similar tools, to be used jointly by these stakeholders and housing cooperatives to support energy improvement work.
 
 \section{Discussions} %Shouldn't this be a separated file?
 \label{sec:disc}
