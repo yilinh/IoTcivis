@@ -1,124 +1,110 @@
 \section{CIVIS: A Community-Oriented Design in Future Smart Grids}
 \label{sec:civis}
 
-Since more than two decades the ongoing and long-term energy transition shifted the energy domain
-towards decentralization, distributed production and renewable sources \cite{rifkin_third_2011,sovacool_how_2016}. Several general and intertwined aspects contribute to this transition: 
-(\textit{i}) the awareness of the inherent complexities that exist among energy systems, societies 
-and the environment \cite{bulkeley_bringing_2012,umbach_global_2010}; (\textit{ii}) the
-widespread diffusion of new, enhanced technologies and their hybridization with contemporary ICTs 
-\cite{putrus_smart_2013,schick_innovating_2013}; (\textit{iii}) the pursuit of national and 
-supranational energy policies around energy efficiency, sustainability and low carbon emissions 
-\cite{da_graca_carvalho_eu_2012}; and (\textit{iv}) the emergence of new actors in the energy value 
-chain, such as energy cooperatives and energy communities \cite{viardot_role_2013}, or the 
-transformation of old ones, such as housing associations, and amateur energy managers 
+For more than two decades, energy transition has shifted the energy domain
+towards decentralization and distributed renewable sources \cite{rifkin_third_2011,sovacool_how_2016}. This transition can be attributed to several intertwined facts: 
+(1) the increasing awareness of the inherent complexity among energy systems, societies 
+and the environment \cite{bulkeley_bringing_2012,umbach_global_2010}, (2) the
+widespread diffusion of new enhanced technologies and their hybridization with modern ICT
+\cite{putrus_smart_2013,schick_innovating_2013}, (3) the pursuit of national and 
+supranational energy policies promoting energy efficiency, sustainability and low carbon emissions 
+\cite{da_graca_carvalho_eu_2012}, and (4)~the emergence of new actors such as energy cooperatives and energy communities in the energy value chain \cite{viardot_role_2013}, and the 
+transformation of traditional actors such as housing associations and amateur energy managers 
 \cite{hasselqvist_linking_2016}.
 
-CIVIS work took place under European Union’s interest to support energy transition by tackling the 
-so called societal challenge of efficient energy. The vision of smart grids and the use of ICTs were 
+The CIVIS project\footnote{\url{http://cordis.europa.eu/project/rcn/110429\_en.html}} discussed in this section took place under the European Union's interest to address the societal challenges of energy efficiency. The vision of smart grids and the use of ICT are 
 the main drivers for the project's ambition to reconfigure the relationships among traditional and 
-emerging actors in the energy value chain -- \textit{i.e.} distributors, producers, retailers and 
-prosumers, cooperatives. In particular, CIVIS was a three year, EU 
-project\footnote{\url{http://cordis.europa.eu/project/rcn/110429\_en.html}} funded under the 
-\textit{FP7 Smart Cities} framework, that pursued the design, prototyping and real-life testing of 
-a platform for the improvement of energy behaviours in the domestic sector. The project was 
-structured around three main areas of interest -- \textit{i.e.} energy, ICT, and social innovation 
--- and organized into three broad phases that roughly overlapped with the project years and that 
-ensured a close interaction with the local realities and contexts of the pilots: (\textit{i}) an 
-exploratory phase, used to align CIVIS’ overarching objectives with the local contexts’ needs;
-(\textit{ii}) a prototyping one, which concerned the actual design and development of the platform 
-(from data monitoring devices to the front-end applications); and (\textit{iii}) a final testing 
-phase which included the full scale deployment of the platform in the pilots for usage and 
-assessment purposes.
-Therefore, in CIVIS the possibilities for a socio-technical approach were present by design
-in the formal structure and description of the project.
-Furthermore, the composition of the consortium included the diversity of disciplinary backgrounds
-and profiles -- \textit{i.e.} engineers, computer scientists, designers, and sociologists --
-that was necessary for tackling the evolving shaping and
-understanding of the socio-technical system from multiple perspectives (See Fig. \ref{fig:sts_levels}).
+emerging actors -- producers, distributors, retailers, 
+prosumers and cooperatives -- in the energy value chain. CIVIS was a three-year project that pursued the design, prototyping and real-world piloting of 
+a platform for the improvement of energy consumption behaviour in the domestic sector. The project was 
+structured around three main areas of interest -- energy, ICT, and social innovation 
+-- and was organized in three broad phases that roughly overlapped with the project years.
+Each phase ensured a close interaction with the local realities and context of the pilot sites: (I) an 
+exploratory phase, aligned CIVIS' overarching objectives with the local context,
+(II) a prototyping phase, concerned with the design and development of the platform 
+(from data monitoring devices to the front-end applications), and (III) a piloting 
+phase, for the full scale deployment of the platform in the pilot sites and 
+assessment.
 
-Below we clarify how CIVIS adopted %is the right word?? (used?)
-a socio-technical approach in practice. We provide an overview of the context of the design situation,
-we summarize the collaborative design process that was put in place, and we present
-the main outcomes, which allow to appreciate CIVIS socio-technical system both in
-its technical and social levels.  
+In CIVIS, the possibility for a socio-technical approach was present by design from onset
+in its formal structure and description.
+The composition of the project consortium included a diversity of disciplinary profiles -- electrical engineers, computer scientists, HCI designers and sociologists -- that was necessary for tackling socio-technical challenges in the project from multiple perspectives as discussed in Section~\ref{sec:design}. 
+% 
+In this Section, how CIVIS adopted %is the right word?? (used?)
+a socio-technical approach in practice is presented. After an overview of the design situation,
+the collaborative design process and the main outcomes are discussed.
+%, which allow to appreciate CIVIS socio-technical system both in its technical and social levels.  
 
-\subsection{Understanding and Formulation of the Design Situation}
+\subsection{A Brief Overview of Design Situation}
 
-Formally, the goals of CIVIS platform were to increase energy awareness, by making energy behaviours more visible, to promote
-environmental and social values, to increase citizens' know-how about sustainable consumption, and to help
-them in improving energy behaviours in their everyday life and together with local communities.
-
-These interests built upon existing research and emerging trends.
+CIVIS had the goal to increase citizens' energy awareness, promote environmental and social values, improve citizens' know-how about sustainable consumption, and to facilitate citizens to improve energy consumption behaviours in their everyday life together with local communities \cite{Huang2014,Huang2015a,Huang2016}. 
+These interests were built upon prior research and socio-technical trends regarding smart grids.
 For instance, research topics linking the potential of Social Networks (SNs) with that of smart grid applications 
 have caught great attention in recent years, following the success of several popular platforms 
 \cite{Boslet2010,Chima2011,Erickson2012,Fang2013,Huang2015}. 
-Some conducted surveys to understand user needs for energy services combining SNs \cite{Silva2012}. 
+Some research conducted surveys to understand user needs for energy services combining SNs \cite{Silva2012}. 
 Some studied connecting smart meters (or smart homes) for energy management and
 sharing \cite{Ciuciu2012,Steinheimer2012}. 
-Simulation models are developed to study value-added web services \cite{De-Haan2011,Lei2012,Chatzidimitriou2013} and to 
+Simulation models were developed to study value-added web services \cite{De-Haan2011,Lei2012,Chatzidimitriou2013} and to 
 demonstrate the feasibility of coordination in meeting energy targets \cite{Worm2013,Skopik2014}.
-Finally, works that visualize smart meter and appliance-level consumption data to enable comparative 
-feedback among households are also increasing \cite{Petkov2011,Weiss2012,Dillahunt2014}.
+There has been works that visualize smart meter and appliance-level consumption data to enable comparative feedback among households \cite{Petkov2011,Weiss2012,Dillahunt2014}.
 
-However, we also wanted the overarching purpose, the underlying infrastructure and the core features of 
-CIVIS Platform to be able to integrate 
-into rather different contexts, to meet diverse needs and expectations as well as to serve various 
-types of user. This is why, in CIVIS, the pilot sites were understood more as sources of collaborative design and development,
-rather than just as passive recipients of a technology to be tested.  
+An overarching goal of the CIVIS project is to integrate the core features of CIVIS design and its underlying infrastructure into rather different contexts, to meet diverse needs and expectations as well as to serve various types of users. 
+This is why the pilot sites of CIVIS -- two sites hosted in Italy and two in Sweden -- were also deemed as sources of collaborative design and development rather than merely passive recipients of a technology to be tested.  
 
-Italy and Sweden hosted two pilots each. In the former, the work focused on cooperative owned 
-electricity provision. In the latter, it concerned housing cooperative's energy management in 
-apartment buildings and townhouses.  
-In brief, the two municipalities of Storo and San Lorenzo, in Trentino Alto-Adige (a region in 
-north-west Italy), included the Italian pilots. Here, two electric cooperatives, producing and 
+In the two Italian pilot sites\footnote{Two municipalities of Storo and San Lorenzo in Trentino Alto-Adige, Northwest Italy.}, the focus was cooperative owned electricity provision to local houses. 
+Two electricity cooperatives, producing and 
 selling 100\% renewable energy to their associate members, together with two samples of recruited 
-associate member households acted as the main stakeholders. The regional distribution system 
-operator (DSO), the institutional representatives of the two municipalities and two local cultural 
-associations participated as stakeholders in various phases of the project, by providing knowledge 
+associate member households acted as the main stakeholders.
+The regional distribution system 
+operator (DSO), the institutional representatives of the two municipalities, and two local cultural 
+associations participated as stakeholders in different phases of the project, by providing knowledge 
 and support for technical aspects related to energy and households engagement.
-Similarly, the area of Stockholm hosted the two Swedish pilots. One involved the residential and 
-central neighbourhood of Hammarby Sj\"{o}stad, which included apartment buildings owned by housing 
+The CIVIS design in Italy needs to support energy communities in demand-side management\footnote{For example, moving peaks of electricity demand towards peaks of local energy
+production or, in other words, improving the self-consumption capabilities of the electric cooperatives and
+their associate members}. 
+
+In the two Swedish pilot sites\footnote{The neighbourhoods of Hammarby Sj\"{o}stad and F\aa{}rdala in the Stockholm area.}, the focus was housing cooperative's energy management in apartment buildings and townhouses.  
+One site included apartment buildings owned by housing 
 cooperatives\footnote{In Sweden, those who buy an apartment must join a corresponding \textit{housing cooperative} that owns and maintains the estates. The 
 members of a cooperative annually elect a board that makes energy related decisions on behalf of 
-the members.}. Recruited households from the cooperatives and cooperatives' board members acted
-as key stakeholders here. % Was YouPower released in Fardala at all? Do we want to explicitly talk about Fardala?
-The other pilot concerned a townhouse area in the outskirts of Stockholm: F\aa{}rdala. In this townhouse area the 
-local residents’ association and some of its member households participated to CIVIS.
+the members.}. Recruited households from the cooperatives, and the cooperatives' board members acted
+as key stakeholders. % Was YouPower released in Fardala at all? Do we want to explicitly talk about Fardala?
+The other site was a townhouse area where the 
+local residents' association and some of its member households participated to CIVIS.
+The design in Sweden needs to support knowledge sharing about energy management practices at building and apartment levels.
 
-Ultimately, and at the general level, the design problem areas converged on two different sets of problems
-depending on the two countries. In Italy, the platform had to integrate into energy communities to support
-efforts of demand-side management\footnote{\textit{E.g.} Moving peaks of electricity demand, towards peaks of local energy
-production or, in other words, improving the self-consumption capabilities of the electric cooperatives and
-their associate members}. In Sweden, it had to support knowledge sharing about energy management practices at building and apartment levels.
+%Ultimately, and at the general level, the design problem areas converged on two different sets of problems depending on the two countries. 
+
 
 % Does this "Evaluation" belong here? I don't think so (gp)
-\paragraph{Evaluation} After a successful deployment, YouPower was evaluated in the test sites in Sweden and Italy. We collected in parallel, the data on user engagement with the app and on energy prosumption. The initial evaluation revealed how the Trentino residents engaged with a weather feature that predicts the solar energy production levels, while the Stockholm housing association managers used the community features to engage with the residents and connect with other managers. 
-
-Some of the tangible results in the Italian test site include the savings in the electricity and heating energy spent or produced \cite{civics}:
-\begin{itemize}
-	\setlength{\itemsep}{0mm}
-	\item percent	of	self-consumption	of	 the	PV	self-produced energy	 is	 increased	 for more than	50\% of the	users	comparing	to	the period before CIVIS;
-	\item electricity	consumption	from the	grid	is	reduced for the same period for	more than	50\% of the	consumers;	
-	\item 	total	 electricity	 consumption	 (including both, from	the grid	 and	the PV	 self-consumption)		is	reduced for the same period for	more than	50\% of the	consumers;	
-	\item  the users spent less than 11\% of hours in overheating their spaces.\footnote{The	heating behaviour	 of	 CIVIS	 users (control	 of	 space	 heating),	 met	 the	recommended	standard	values.}
-\end{itemize}
-
-The housing cooperatives (BRF; bostadsr\"attsf\"orening	in	Swedish) in Stockholm conducted following actions as a result of the YouPower use \cite{civics}:
-
-\begin{itemize}
-	\setlength{\itemsep}{0mm}
-	\item BRF	Grynnan: adjustments of	ventilation	system and	turning	off	the	outdoor	ice	melting	system (resulting in	reductions	in	heating);
-	\item BRF	 Sj\"ostaden	 1: extra	 insulation	 added	 to	 the	 roofs in	May	2015	(lead	to	a	decrease	in	heating	consumption);	 installation	 of	 heat	 recovery	 heat	 pumps	 in	 February	 2016 (lead	 to	 some	 increase	 in	 electricity	 consumption	 but	 the	 overall	savings);
-	\item BRF	\"Alven: ventilation	optimization due to lower thermal comfort,	however	the	energy	use	went	up;
-	\item BRF	 Seglatsen: installation of recovery	heat	pumps	in	 the	building (reduction in	 the	heating	consumption	by	around	60\%, and since electrcitiy consumption increased, overall savings are	about	40\%).	
-	\item BRF	 Hammarby	 Kanal:	 ventilation optimization;
-	\item BRF	 Hammarby	 Ekbacke: a goal	 based	 energy	 reduction in	a	new	business	model	for	the	housing	associations	where	 they do not	 have	 to	 pay upfront	costs	for	the energy 	actions, and then part	of	the	savings	goes to	the	 ESCO (European Skills, Competences, Qualifications and Occupations)	 for	 a	 fixed	 time	 period.	
-\end{itemize}
-
-
-To assess the long term effectiveness of the CIVIS social energy intervention,  after a certain period of time, it would be beneficial to fuse the collected data from the app with those about the consumption/prosumption. 
-
-\paragraph{Limitations} The initial lack of data due to acquisition and privacy issues in the residential setting was among the main limitation in this project. We installed the IoT sensors to collect additionally needed data for using the introduced app. 
+%\paragraph{Evaluation} After a successful deployment, YouPower was evaluated in the test sites in Sweden and Italy. We collected in parallel, the data on user engagement with the app and on energy prosumption. The initial evaluation revealed how the Trentino residents engaged with a weather feature that predicts the solar energy production levels, while the Stockholm housing association managers used the community features to engage with the residents and connect with other managers. 
+%
+%Some of the tangible results in the Italian test site include the savings in the electricity and heating energy spent or produced \cite{civics}:
+%\begin{itemize}
+%	\setlength{\itemsep}{0mm}
+%	\item percent	of	self-consumption	of	 the	PV	self-produced energy	 is	 increased	 for more than	50\% of the	users	comparing	to	the period before CIVIS;
+%	\item electricity	consumption	from the	grid	is	reduced for the same period for	more than	50\% of the	consumers;	
+%	\item 	total	 electricity	 consumption	 (including both, from	the grid	 and	the PV	 self-consumption)		is	reduced for the same period for	more than	50\% of the	consumers;	
+%	\item  the users spent less than 11\% of hours in overheating their spaces.\footnote{The	heating behaviour	 of	 CIVIS	 users (control	 of	 space	 heating),	 met	 the	recommended	standard	values.}
+%\end{itemize}
+%
+%The housing cooperatives (BRF; bostadsr\"attsf\"orening	in	Swedish) in Stockholm conducted following actions as a result of the YouPower use \cite{civics}:
+%
+%\begin{itemize}
+%	\setlength{\itemsep}{0mm}
+%	\item BRF	Grynnan: adjustments of	ventilation	system and	turning	off	the	outdoor	ice	melting	system (resulting in	reductions	in	heating);
+%	\item BRF	 Sj\"ostaden	 1: extra	 insulation	 added	 to	 the	 roofs in	May	2015	(lead	to	a	decrease	in	heating	consumption);	 installation	 of	 heat	 recovery	 heat	 pumps	 in	 February	 2016 (lead	 to	 some	 increase	 in	 electricity	 consumption	 but	 the	 overall	savings);
+%	\item BRF	\"Alven: ventilation	optimization due to lower thermal comfort,	however	the	energy	use	went	up;
+%	\item BRF	 Seglatsen: installation of recovery	heat	pumps	in	 the	building (reduction in	 the	heating	consumption	by	around	60\%, and since electrcitiy consumption increased, overall savings are	about	40\%).	
+%	\item BRF	 Hammarby	 Kanal:	 ventilation optimization;
+%	\item BRF	 Hammarby	 Ekbacke: a goal	 based	 energy	 reduction in	a	new	business	model	for	the	housing	associations	where	 they do not	 have	 to	 pay upfront	costs	for	the energy 	actions, and then part	of	the	savings	goes to	the	 ESCO (European Skills, Competences, Qualifications and Occupations)	 for	 a	 fixed	 time	 period.	
+%\end{itemize}
+%
+%
+%To assess the long term effectiveness of the CIVIS social energy intervention,  after a certain period of time, it would be beneficial to fuse the collected data from the app with those about the consumption/prosumption. 
+%
+%\paragraph{Limitations} The initial lack of data due to acquisition and privacy issues in the residential setting was among the main limitation in this project. We installed the IoT sensors to collect additionally needed data for using the introduced app. 
 
 \subsection{Collaborative Design Process}
 
@@ -295,7 +281,7 @@ among others.
 
 \begin{figure}[h!]
 \begin{center}\footnotesize
-	\includegraphics[width=1.0\linewidth]{img/civis_platform_overview.pdf}\\
+	\includegraphics[width=.8\linewidth]{img/civis_platform_overview.pdf}\\
 	DSO (Distribution System Operators),  SSL (Secure Sockets Layer)
 	\caption{YouPower Platform Overview}\label{fig:platform}
 \end{center}
