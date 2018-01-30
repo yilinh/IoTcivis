@@ -1,54 +1,59 @@
 
-\noindent Given time and resource constraints, the YouPower app can not be developed all-in-one cross-platform (for phones, tablets and computers). We chose to design the front-end as a hybrid mobile phone app, i.e. its UI design has layouts that suit phone screens, %The consideration is multi-fold. 
+Combining smart sensing and web technologies among others,
+YouPower is designed as a social smart grid application (developed by the CIVIS project as a hybrid mobile app) that can connect users to friends, families and local communities to learn and take energy actions that are relevant to them together. The app encourages an energy-friendly lifestyle and can be linked to users' energy consumption and production data for quasi real-time and historical prosumption information. 
+% 
+%\noindent Given time and resource constraints, the YouPower app can not be developed all-in-one cross-platform (for phones, tablets and computers). We chose to design the front-end as a hybrid mobile phone app, i.e. its UI design has layouts that suit phone screens, %The consideration is multi-fold. 
 %Western Europe has a large mobile phone internet user base\footnote{Between 2013 and 2017, the penetration rate of mobile phone internet users among mobile phone users will rise from 49.0\% to 77.8\%. See more at: \url{ http://www.emarketer.com/Article/Nearly-Half-of-Western-Europeans-Will-Use-Mobile-Web-This-Year/1010510\#sthash.AaVfsqIU.dpuf}}. Many surveys show that mobile apps have advantages such as creating deeper user engagement, easy sharing, among others\footnote{\url{https://infomedia.com/blog/the-advantages-of-mobile-apps/}, \url{https://econsultancy.com/blog/62326-85-of-consumers-favour-apps-over-mobile-websites/}}. This makes mobile app a good choice given the goal of the CIVIS platform. 
-since mobile apps can be more easily transformed to web browser versions, while the reverse is more difficult.
-The back-end of the YouPower platform will remain mostly the same independent of the front-end alternatives.
-
-CIVIS platform is composed of (I) the \textit{energy sensor level services} mainly
-dealing with energy data collection; and (II) the \textit{energy data level and social
+%since mobile apps can be more easily transformed to web browser versions, while the reverse is more difficult.
+%The back-end of the YouPower platform will remain mostly the same independent of the front-end alternatives.
+%
+The platform as a whole (shown in Figure~\ref{fig:platform}) is mainly composed of (I) the \textit{energy sensor level services} mainly
+dealing with energy data collection, and (II) the \textit{energy data level and social
 level services} mainly dealing with energy data analytics as well as user, household and community management
 among others. 
 
 \begin{figure}[h!]
-\begin{center}\footnotesize
-	\includegraphics[width=.8\linewidth]{img/civis_platform_overview.pdf}\\
-	DSO (Distribution System Operators),  SSL (Secure Sockets Layer)
-	\caption{YouPower Platform Overview}\label{fig:platform}
-\end{center}
+\sidecaption[t]
+%\footnotesize
+	\includegraphics[width=.64\linewidth]{img/civis_platform_overview.pdf} %\\
+	%DSO (Distribution System Operators),  SSL (Secure Sockets Layer)
+	\caption{The CIVIS project platform overview. DSO (Distribution System Operators); SSL (Secure Sockets Layer)}\label{fig:platform}
 \end{figure}
 
-(I) \textit{Energy sensor level services:} CIVIS project installed hardware (smart plugs and sensors) and
+
+\runinhead{Energy Sensor Level Services} The CIVIS project installed hardware (smart plugs and sensors) and
 software required for appliance-level energy data collection. The hardware/software choices differ in the
-two sites due to local circumstances. For example, \textit{Smappee}\footnote{\url{http://www.smappee.com}}
+two sites due to the local context. For example, \textit{Smappee}\footnote{\url{http://www.smappee.com}}
 for 40 households in Stockholm, and \textit{CurrentCost}\footnote{\url{http://currentcost.com}} for 79
 households in Trento. Trento also installed Amperometric clamps for PV prodcution measures. 
-Household-level energy data is measured by smart meters and provided by local DSOs (Distribution System Operators). 
+Household-level energy data of the pilot sites in both countries is measured by smart meters and provided by local DSOs. 
 
-(II) \textit{Energy data level and social level services:} These services are provided by the YouPower
-app and its back-end. The design of the YouPower app (and its back-end) consists of three self-contained
-composable parts: (A) \textit{House Cooperatives} (contextualized and deployed to the Stockholm test site);
-(B) \textit{Demand-Side Management} (contextualized and deployed
-to the Trento test site); and (C) \textit{Action Suggestions} (contextualized and deployed to both test sites).
-
+\runinhead{Energy Data Level and Social Level Services} These services are provided by the YouPower
+app and its back-end. The design consists of three self-contained
+composable parts: (1) \textit{House Cooperatives} (contextualized and deployed to the Stockholm pilot site);
+(2) \textit{Demand-Side Management} (contextualized and deployed
+to the Trento pilot site); and (3) \textit{Action Suggestions} (contextualized and deployed to both pilot sites).
+They are discussed in the following subsections. 
 
 \paragraph{Housing Cooperatives}
-% \label{sect:brf}
+\label{sect:brf}
 
-This part of the YouPower app is designed for the community of housing cooperatives (\textit{Bostadsr{\"a}ttsf{\"o}rening} or \textit{Brf} in Swedish) in the Stockholm test site \cite{Hasselqvist2016}.
+This part of the YouPower app is designed for the community of housing cooperatives\footnote{\textit{Bostadsr{\"a}ttsf{\"o}rening} or \textit{Brf} in Swedish.} in the Stockholm pilot sites \cite{Hasselqvist2016}.
 Similar housing ownership and management models exist in a number of EU and non-EU countries, which allow potential wider application of the design.
-A housing cooperative annually elects a board which manages cooperative properties and decides on energy contracts, maintains energy systems, and proposes investments in energy efficient technologies. Since board members are volunteers who may have limited knowledge of energy or building management, this part of the app aims to support board members in energy management, in particular energy reduction actions. Cooperative members can also use the app to follow energy decisions and works of the cooperative. Additionally, the app can be of interest by building management companies working with housing cooperatives. 
+A housing cooperative annually elects a board which manages cooperative properties and decides on energy contracts, maintains energy systems, and proposes investments in energy efficient technologies. Since board members are volunteers who may have limited knowledge of energy or building management, this module aims to support board members in energy management, in particular energy reduction actions. Cooperative members can also use the app to follow energy decisions and works of the cooperative. Additionally, the app can be of interest by building management companies working with housing cooperatives. 
 The information presented in the app is visible for these user
 groups and shared between housing cooperatives. This openness of energy data is key to
-facilitating  users in sharing experiences relevant for taking energy reduction actions.\\
+facilitating  users in sharing experiences relevant for taking energy reduction actions.
 
 % \subsubsection{Linking energy data to energy reduction actions}
-\textbf{Linking energy data to energy reduction actions}
+\subparagraph{Linking Energy Data to Energy Reduction Actions}
 
-The design links energy data with energy reduction actions taken (Figure~\ref{fig:Figure201_Actions}), both at cooperative levels, making the impact of energy actions visible to users. The energy use is divided into heating \& hot water (from district heating), and facilities electricity (in apartment buildings). Users can switch between the views per month or per year to show overall changes. %Since the energy data is shared between cooperatives there may also be privacy concerns related to opening up data of higher granularity to people outside of the own cooperative. 
+The design links energy data with energy reduction actions taken (Figure~\ref{fig:Figure201_Actions}) at cooperative levels, making the impact of energy actions visible to users. The energy use is divided into distrct heating \& hot water, and facilities electricity in apartment buildings. Users can switch between the views per month or per year to show overall changes. %Since the energy data is shared between cooperatives there may also be privacy concerns related to opening up data of higher granularity to people outside of the own cooperative. 
 %
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=.9\linewidth]{img/Figure201_Actions.png}
+\begin{figure}[t!]
+	%\centering
+	\sidecaption[t]
+	\includegraphics[width=.64\linewidth]{img/Figure201_Actions.png}
 	\caption{Heasting \& hot water use graph. Blue bars show the current year's use per month; the black line shows that of previous year. Energy reduction actions taken are mapped to the time of action and listed below.}
 	\label{fig:Figure201_Actions}
 \end{figure}
@@ -58,14 +63,15 @@ and the related cost.
 Trusted energy or building management companies can also get editing rights to add energy reduction actions they took on behalf of the cooperative. 
 Added actions appear at the month when each action was taken and are listed below the graph. When clicking on an action in the list, the details of the action are shown.
 % 
-To make the impact of actions visible, users can compare the energy use of the viewed months to that of a previous year. This can be used e.g. by a cooperative to explore what energy reduction actions to take in the future by learning actions taken by other cooperatives and what the effects were in relation to costs.\\
+To make the impact of actions visible, users can compare the energy use of the viewed months to that of a previous year. This can be used e.g. by a cooperative to explore what energy reduction actions to take in the future by learning actions taken by other cooperatives and what the effects were in relation to costs.
 
 % \subsubsection{Comparing housing cooperatives}
-\textbf{Comparing housing cooperatives}
+\subparagraph{Comparing Housing Cooperatives}
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.9\linewidth]{img/Figure202_Housing_cooperatives_comparison.png}
+\begin{figure}[t!]
+	%\centering
+		\sidecaption[t]
+	\includegraphics[width=0.64\linewidth]{img/Figure202_Housing_cooperatives_comparison.png}
 	\caption{Map and list view of participating housing cooperatives. The energy performance of cooperatives is indicated by colour and in numbers.}
 	\label{fig:Figure202_Housing_cooperatives_comparison}
 \end{figure}
@@ -77,28 +83,27 @@ Users can also see the energy performance as a number (in kWh/m$^2$), and the in
 % 
 During stakeholder studies, energy managers in cooperative boards stressed the importance of knowing the difference between cooperatives in order to understand the difference in their energy performance. Thus, the design also includes information about cooperatives (Figure~\ref{fig:Figure204_Neighbourhood_average}) such as the number of apartments and heated areas in a cooperative, a building's construction year, and types of ventilations (e.g. with or without heat recovery).
 % 
-Users can compare a cooperative's energy use per month or per year to another cooperative or to the neighborhood average. The electricity use is also displayed per area (kWh/m$^2$) to make it comparable.\\
-\begin{figure}
-\centering
-\includegraphics[width=.42\linewidth]{img/brf.pdf}
+Users can compare a cooperative's energy use per month or per year to another cooperative or to the neighborhood average. The electricity use is also displayed per area (kWh/m$^2$) to make it comparable.
+\begin{figure}[t]
+	\sidecaption[t]
+\includegraphics[width=.35\linewidth]{img/brf.pdf}
 \caption{Facilities electricity use graph. Information about housing cooperatives and actions is displayed at the top. Green bars show the housing cooperative's current year's use per month; the black line shows the average use of all housing cooperatives}
 \label{fig:Figure204_Neighbourhood_average} 
 \end{figure}
 
 % \subsubsection{Sharing experiences}
-\textbf{Sharing experiences}
+\subparagraph{Sharing Experiences}
 
 
 A cooperative interested in taking an action may wish to know more, e.g. which contractor was chosen for an investment and why or how to get buy-in from cooperative members. The design provides commenting functions for each action added, where users can post questions and exchange experiences. The cooperatives can also add email addresses of their contact persons, which are visible on each cooperative's app page.
 % 
 Sharing experiences certainly also happens outside of the digital world, e.g. during meetings of cooperative boards or with local energy networks. The app aims  to support discussions and knowledge exchange also in such situations, where someone can easily demonstrate the impact of an energy investment with smart phones.
 
-
-% % % ITALIAN TEST SITE
+% % % ITALIAN pilot site
 \paragraph{Demand-Side Management} 
 % \label{sect:load_shifting}
 
-This part of the YouPower app is designed for the Trento test site and can have wider application.
+This part of the YouPower app is designed for the Trento pilot site and can have wider application.
 It provides users historical and quasi real-time consumption and production information, and facilitates users to leverage load elasticity in order to maximize self-consumption of rooftop PV productions. 
 Energy data is displayed at appliances (if smart plugs are installed), household, and electricity consortia levels. %to inform users of their own energy consumption patterns and those in the neighborhood. 
 %
@@ -108,59 +113,39 @@ Historical and current consumption and production at the household level allow u
 % 
 Aggregated and average consumption at the consortia level informs users of neighborhood energy consumption and allows comparisons.  
 % 
-In addition, dynamic Time-of-Use (ToU) signals are displayed  to assist users in load shifting during their daily actions. \\
+In addition, dynamic Time-of-Use (ToU) signals are displayed  to assist users in load shifting during their daily actions.
 
 % \subsubsection{Historical and quasi real-time consumption and production} 
-\textbf{Historical and quasi real-time consumption and production}
+\subparagraph{Historical and Quasi Real-time Consumption and Production}
 
 At the household level, electricity consumption and PV production levels (in W and Wh) are displayed in quasi real-time and updated for the latest six minutes\footnote{For technical reasons such as households' data transfer connections and processing time, there can be up to 2-min delay between the time of actual power measurement and the data displayed.}.
 This information can also be displayed as a bar chart for a chosen period (in the past) to provide an aggregated daily overview of consumption vs. production (Figure~\ref{fig:viz_rt}). 
 % 
-\begin{figure}
-      \begin{center}
-        \begin{minipage}[htb]{0.43\linewidth}    
-        \includegraphics[width=1\linewidth]{img/visual_production.png}
-        \end{minipage}
- 	\hfill 
-         \begin{minipage}[htb]{0.55\linewidth}    
-	        \includegraphics[width=1\linewidth]{img/historicalcomparison_prodcons.png} 
-                \end{minipage}
-      \end{center}
-    \caption{(a) Quasi real-time meters for household PV production; (b) Household consumption vs. production for a chosen period
-}
+\begin{figure}[b]
+\sidecaption[t]
+        \includegraphics[width=.25\linewidth]{img/visual_production.png}	        \includegraphics[width=.35\linewidth]{img/historicalcomparison_prodcons.png} 
+    \caption{(a) Quasi real-time meters for household PV production; (b) Household consumption vs. production for a chosen period}
 \label{fig:viz_rt}
 \end{figure}
 %
 When smart plugs are installed, users can view the daily electricity consumption (in Wh) of the corresponding connected appliances of their own household for a chosen period (Figure~\ref{fig:viz_hist} a). This helps them to gain better insights into the individual appliance's consumption level and its daily or seasonal patterns. 
 % Selection of data ranges are mandatory for these visualizations. They must be set by users at two different places: in the ``Energy Data'' main screen for the \textit{Household} category; in the ``light-bulb'' sub-view for the \textit{Appliance} one, which is accessible from the top level bar.
-\begin{figure}
-      \begin{center}
-        \begin{minipage}[htb]{0.54\linewidth}    
-        \includegraphics[width=1\linewidth]{img/applianceconsumption.png}
-        \end{minipage}
-	\hfill 
-        \begin{minipage}[htb]{0.44\linewidth}    
-         \includegraphics[width=1\linewidth]{img/benchmark.png}
-        \end{minipage}
-      \end{center}
+\begin{figure}[t]
+      \sidecaption[t]
+        \includegraphics[width=.35\linewidth]{img/applianceconsumption.png}
+         \includegraphics[width=.25\linewidth]{img/benchmark.png}
       \caption{(a) Daily electricity consumption at the appliance level for a chosen period;  (b) 
-      A household's hourly consumption profile over a chosen day compared to the averages and totals of the consortia
-}
+      A household's hourly consumption profile over a chosen day compared to the averages and totals of the consortia}
+
 \label{fig:viz_hist}
 \end{figure}
  %
-With the aggregated energy data provided by the two local electricity consortia, users can also  compare their own households' hourly consumption profiles over a chosen day to the averages and totals of the consortia to gain a sense of their relative performance compared to their peers (Figure~\ref{fig:viz_hist} b). \\
+With the aggregated energy data provided by the two local electricity consortia, users can also  compare their own households' hourly consumption profiles over a chosen day to the averages and totals of the consortia to gain a sense of their relative performance compared to their peers (Figure~\ref{fig:viz_hist} b).
 
-\begin{figure}
-      \begin{center}
-        \begin{minipage}[htb]{0.45\linewidth}    
-        \includegraphics[width=1\linewidth]{img/touprediction.png}
-        \end{minipage}
-	\hfill 
-        \begin{minipage}[htb]{0.45\linewidth}    
-         \includegraphics[width=1\linewidth]{img/touperformancechart_indivcoll.png}
-        \end{minipage}
-      \end{center}
+\begin{figure}[b]
+      \sidecaption[t]
+        \includegraphics[width=.3\linewidth]{img/touprediction.png}
+         \includegraphics[width=.3\linewidth]{img/touperformancechart_indivcoll.png}
       \caption{(a) Dynacmie ToU signals at 3-hour intervals for the forthcoming 30 hours;  (b) 
       A household's hourly consumption profile over a chosen day compared to the averages and totals of the consortia
 }
@@ -168,14 +153,13 @@ With the aggregated energy data provided by the two local electricity consortia,
 \end{figure}
 
 % \subsubsection{Dynamic ToU signals} 
-\textbf{Dynamic ToU signals}
+\subparagraph{Dynamic ToU Signals}
 
 Dynamic ToU signals are provided to facilitate users' self-consumption of local PV productions.
 They give clear indications to encourage or discourage electricity consumption at a certain moment based on the forecasted local renewable production level calculated with open weather forecast information (in particular solar radiation data) and the local rooftop PV production capacity. 
 The signals are at 3-hour intervals for the forthcoming 30 hours (Figure \ref{fig:tou} a), and are updated every 24 hours. A green smiley face signals a time slot suitable for self-consumption where the forecasted local PV production exceeds the current local consumption, while an orange frown face signals otherwise.  
 % 
 On a weekly basis, users get a summary of the proportion of their own household consumption that took place under green or orange ToU signals to allow them to reflect on their levels of self-consumption (Figure \ref{fig:tou} b). The same information is also provided at the consortia level to enable peer comparison. 
-
 
 \paragraph{Action Suggestions}
 % \label{sect:tips}
@@ -188,12 +172,12 @@ They include one-time actions such as ``Use energy efficient cooktops'', routine
 Some suggestions may seem obvious and trivial, but as indicated by literature, people often has an attitude-behavior gap when it comes to environmental issues. The goal is to facilitate the behavior change process to bridge the attitude-behavior gap, making energy conservation new habits integrated in everyday household practices. 
 
 % \subsubsection{Free choice and self-monitoring of energy conservation actions}
-\textbf{Free choice and self-monitoring of energy conservation actions}
+\subparagraph{Free Choice and Self-monitoring of Energy Conservation Actions}
 
 The actions are not meant as prescriptions for what users should do but to present different ideas of what they can do (and how) in household practices. 
 Users can freely choose whether (and when) to take an action and possibly reschedule and repeat the action according to the needs and interests in their own context (Figure \ref{fig:actions}). After all, users are experts of their own reality. They also have an overview of their current, pending, and completed actions.
 A new action is suggested when one is completed. %After an action is in progress, the user may also postpone, abandon or indicate that the action is completed (Figure \ref{fig:actions} c). 
-When an action is scheduled, its reminder is triggered by time. Users' own choices of actions and the action processes facilitate the sense of autonomy which enhances and maintains motivation \cite{Ryan2000}. \\
+When an action is scheduled, its reminder is triggered by time. Users' own choices of actions and the action processes facilitate the sense of autonomy which enhances and maintains motivation \cite{Ryan2000}.
 
 \begin{figure}[b!]
       \begin{center}
@@ -213,31 +197,32 @@ When an action is scheduled, its reminder is triggered by time. Users' own choic
 
 
 % \subsubsection{Promoting motivation and engagement} 
-\textbf{Promoting motivation and engagement}
+\subparagraph{Promoting Motivation and Engagement}
 
 The design uses a number of elements to promote users' motivation and engagement. 
 The suggestions are tailored to the local context by local partners and focus groups. 
 Each action is accompanied by a short explanation, the entailed effort and impact (on a five-point scale) and the number of users taking this action. 
 The design encourages users to take small steps (and not to have too many actions at a time) and gives positive performance feedback. 
 In addition, users can invite household members, %  (Figure \ref{fig:invite}), 
-view and join the energy conservation actions of the whole household (Figure \ref{fig:form} a).
+view and join the energy conservation actions of the whole household. % (Figure \ref{fig:form} a).
 Users can also login with Facebook, like, comment, share actions, % (Figure \ref{fig:share}), 
-give feedback (Figure \ref{fig:form} b c) and invite friends. Users are awarded with points  (displayed as Green Leaves) once they complete an action, or provide feedback or comments. 
+give feedback %(Figure \ref{fig:form} b c) 
+and invite friends. Users are awarded with points  (displayed as Green Leaves) once they complete an action, or provide feedback or comments. 
 
 
-\begin{figure}
-      \begin{center}
-      \begin{minipage}[t!]{0.33\linewidth}    
-               \includegraphics[width=1\linewidth]{img/house2.jpg}    
-       \end{minipage}
-        \begin{minipage}[t!]{0.33\linewidth}
-	       \includegraphics[width=1\linewidth]{img/action_not_completed.pdf}
-        \end{minipage}
-        \begin{minipage}[t!]{0.31\linewidth}
-        	       \includegraphics[width=1\linewidth]{img/action_completed.pdf}
-                \end{minipage}
-        %\hfill 
-      \end{center}
-      \caption{(a) Household actions; (b) Feedback form -- action abandoned; (c) Feedback form -- action completed}\label{fig:form}
-\end{figure}
+%\begin{figure}
+%      \begin{center}
+%      \begin{minipage}[t!]{0.33\linewidth}    
+%               \includegraphics[width=1\linewidth]{img/house2.jpg}    
+%       \end{minipage}
+%        \begin{minipage}[t!]{0.33\linewidth}
+%	       \includegraphics[width=1\linewidth]{img/action_not_completed.pdf}
+%        \end{minipage}
+%        \begin{minipage}[t!]{0.31\linewidth}
+%        	       \includegraphics[width=1\linewidth]{img/action_completed.pdf}
+%                \end{minipage}
+%        %\hfill 
+%      \end{center}
+%      \caption{(a) Household actions; (b) Feedback form -- action abandoned; (c) Feedback form -- action completed}\label{fig:form}
+%\end{figure}
 
