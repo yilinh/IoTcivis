@@ -14,6 +14,7 @@
 % in the Reference Guide
 
 \usepackage{mathptmx}       % selects Times Roman as basic font
+\usepackage{amssymb}
 \usepackage{helvet}         % selects Helvetica as sans-serif font
 \usepackage{courier}        % selects Courier as typewriter font
 \usepackage{type1cm}        % activate if the above 3 fonts are
@@ -23,6 +24,12 @@
 \usepackage{graphicx}        % standard LaTeX graphics tool
                              % when including figure files
 \usepackage{multicol}        % used for the two-column index
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{paralist}
+\makeatletter
+\let\savespace\@minipagetrue
+\makeatother
 \usepackage[bottom]{footmisc}% places footnotes at page bottom
 
 \usepackage{array}
@@ -43,14 +50,16 @@
 
 \begin{document}
 
-\title*{Embedding IoT in Large-scale Socio-technical Systems: A Community-Oriented Design in Future Smart Grids}
-\titlerunning{Embedding IoT in Large-scale Socio-technical Systems} 
+\title*{Embedding Internet-of-Things in Large-Scale Socio-Technical Systems: A Community- Oriented Design in Future Smart Grids}
+\titlerunning{Embedding Internet-of-Things in Large-Scale Socio-Technical Systems} 
 
 \author{Yilin Huang, Giacomo Poderi, Sanja \v{S}\'{c}epanovi\'{c}, Hanna Hasselqvist, Martijn~Warnier and Frances Brazier}
-% Use \authorrunning{Short Title} for an abbreviated version of
+\authorrunning{Huang et al.} 
 % your contribution title if the original one is too long
-\institute{Name of First Author \at Name, Address of Institute, \email{name@email.address}
-\and Name of Second Author \at Name, Address of Institute \email{name@email.address}}
+\institute{Yilin Huang, Martijn Warnier and Frances Brazier \at Section Systems Engineering and Simulation, Faculty of Technology, Policy and Management, Delft University of Technology, \email{\{y.huang, m.e.warnier, f.m.brazier\}@tudelft.nl}
+\and Giacomo Poderi \at Department of Computer Science, IT University of Copenhagen, \email{gipo@itu.dk} 
+\and Sanja \v{S}\'{c}epanovi\'{c} \at Department of Computer Science, Aalto University, \email{sanja.scepanovic@aalto.fi} 
+\and Hanna Hasselqvist \at Department of Media Technology and Interaction Design, KTH Royal Institute of Technology, \email{hannaha@kth.se}}
 %
 % Use the package "url.sty" to avoid
 % problems with special characters
@@ -58,10 +67,11 @@
 %
 \maketitle
 
-\abstract*{In traditional engineering, technologies are viewed as the central piece of the engineering design, where the physical world consists of a large number of diverse technological artifacts. The real world, however, also comprises a huge amount of social components -- people, communities, institutions, regulations and everything that exists in the human mind -- that have shaped and been shaped by the technical components. Smart urban ecosystems are examples of such large-scale socio-technical systems that rely on technologies, particularly IoT, within a complex social context where the technologies are embedded. Despite that the two aspects are deeply intertwined, designing applications that embed IoT in large-scale socio-technical systems is slowly transitioning from a traditional engineering approach towards a socio-technical approach. The latter has not yet entered the mainstream of design practice. In this chapter, we present our experience of adopting a socio-technical approach in designing a community-oriented smart grid user application. The challenges, implications and lessons learned are discussed. The chapter is concluded by offering a set of good design principles derived from this experience, which are also relevant to the design of other smart urban ecosystems.}
+\abstract*{In traditional engineering, technologies are viewed as the central piece of the engineering design, where the physical world consists of a large number of diverse technological artifacts. The real world, however, also comprises a huge amount of social components -- people, communities, institutions, regulations and everything that exists in the human mind -- that have shaped and been shaped by the technical components. Smart urban ecosystems are examples of such large-scale Socio-Technical Systems (STS) that rely on technologies, particularly  Internet-of-Things (IoT), within a complex social context where the technologies are embedded. Despite that the two aspects are deeply intertwined, designing applications that embed IoT in large-scale STS is slowly transitioning from a traditional engineering approach towards a Socio-Technical (ST) approach. The latter has not yet entered the mainstream of design practice. In this chapter, we review the literature and present our experience of adopting an ST approach in designing a community-oriented smart grid application. The challenges, process and outcomes are discussed. The chapter is concluded by offering a set of lessons learned derived from this experience which are also relevant to the design of other smart urban ecosystems.}
 
 %change the abstract above too
-\abstract{In traditional engineering, technologies are viewed as the central piece of the engineering design, where the physical world consists of a large number of diverse technological artifacts. The real world, however, also comprises a huge amount of social components -- people, communities, institutions, regulations and everything that exists in the human mind -- that have shaped and been shaped by the technical components. Smart urban ecosystems are examples of such large-scale Socio-technical Systems (STS) that rely on technologies, particularly  Internet-of-Things (IoT), within a complex social context where the technologies are embedded. Despite that the two aspects are deeply intertwined, designing applications that embed IoT in large-scale STS is slowly transitioning from a traditional engineering approach towards a socio-technical approach. The latter has not yet entered the mainstream of design practice. In this chapter, we present our experience of adopting a socio-technical approach in designing a community-oriented smart grid user application. The challenges, implications and lessons learned are discussed. The chapter is concluded by offering a set of good design principles derived from this experience, which are also relevant to the design of other smart urban ecosystems.}
+\abstract{In traditional engineering, technologies are viewed as the central piece of the engineering design, where the physical world consists of a large number of diverse technological artifacts. The real world, however, also comprises a huge amount of social components -- people, communities, institutions, regulations and everything that exists in the human mind -- that have shaped and been shaped by the technical components. Smart urban ecosystems are examples of such large-scale Socio-Technical Systems (STS) that rely on technologies, particularly  Internet-of-Things (IoT), within a complex social context where the technologies are embedded. Despite that the two aspects are deeply intertwined, designing applications that embed IoT in large-scale STS is slowly transitioning from a traditional engineering approach towards a Socio-Technical (ST) approach. The latter has not yet entered the mainstream of design practice. In this chapter, we review the literature and present our experience of adopting an ST approach in designing a community-oriented smart grid application. The challenges, process and outcomes are discussed. The chapter is concluded by offering a set of lessons learned derived from this experience which are also relevant to the design of other smart urban ecosystems.}
+
 
 \input{intro}
 
