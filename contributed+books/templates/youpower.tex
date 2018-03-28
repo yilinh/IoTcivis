@@ -1,6 +1,6 @@
 
 Combining smart sensing and web technologies among others,
-YouPower is designed as a social smart grid application (developed by the CIVIS project as a hybrid mobile app) that can connect users to friends, families and local communities to learn and take energy actions that are relevant to them together. The app encourages an energy-friendly lifestyle and can be linked to users' energy consumption and production data for quasi real-time and historical prosumption information. 
+YouPower is designed as a social smart grid application (developed by the CIVIS project as a hybrid mobile app) that can connect users to friends, families and local communities to learn and take energy actions that are relevant to them together \cite{Huang2017,Huang2015}. The app encourages an energy-friendly lifestyle and can be linked to users' energy consumption and production data for quasi real-time and historical prosumption information. 
 % 
 %\noindent Given time and resource constraints, the YouPower app can not be developed all-in-one cross-platform (for phones, tablets and computers). We chose to design the front-end as a hybrid mobile phone app, i.e. its UI design has layouts that suit phone screens, %The consideration is multi-fold. 
 %Western Europe has a large mobile phone internet user base\footnote{Between 2013 and 2017, the penetration rate of mobile phone internet users among mobile phone users will rise from 49.0\% to 77.8\%. See more at: \url{ http://www.emarketer.com/Article/Nearly-Half-of-Western-Europeans-Will-Use-Mobile-Web-This-Year/1010510\#sthash.AaVfsqIU.dpuf}}. Many surveys show that mobile apps have advantages such as creating deeper user engagement, easy sharing, among others\footnote{\url{https://infomedia.com/blog/the-advantages-of-mobile-apps/}, \url{https://econsultancy.com/blog/62326-85-of-consumers-favour-apps-over-mobile-websites/}}. This makes mobile app a good choice given the goal of the CIVIS platform. 
@@ -25,7 +25,7 @@ among others.
 software required for appliance-level energy data collection. The hardware/software choices differ in the
 two sites due to the local context. For example, \textit{Smappee}\footnote{\url{http://www.smappee.com}}
 for 40 households in Stockholm, and \textit{CurrentCost}\footnote{\url{http://currentcost.com}} for 79
-households in Trento. Trento also installed Amperometric clamps for PV prodcution measures. 
+households in Trento. Trento also installed Amperometric clamps for PV production measures. 
 Household-level energy data of the pilot sites in both countries is measured by smart meters and provided by local DSOs. 
 
 \runinhead{Energy Data Level and Social Level Services} These services are provided by the YouPower
@@ -48,7 +48,7 @@ facilitating  users in sharing experiences relevant for taking energy reduction 
 % \subsubsection{Linking energy data to energy reduction actions}
 \subruninhead{Linking Energy Data to Energy Reduction Actions}
 
-The design links energy data with energy reduction actions taken (Figure~\ref{fig:Figure201_Actions} a) at cooperative levels, making the impact of energy actions visible to users. The energy use is divided into distrct heating and hot water, as well as facilities electricity in apartment buildings. Users can switch between the views per month or per year to show overall changes. %Since the energy data is shared between cooperatives there may also be privacy concerns related to opening up data of higher granularity to people outside of the own cooperative. 
+The design links energy data with energy reduction actions taken (Figure~\ref{fig:Figure201_Actions} a) at cooperative levels, making the impact of energy actions visible to users. Energy use is divided into district heating and hot water, as well as facilities electricity in apartment buildings. Users can switch between the views per month or per year to show overall changes. %Since the energy data is shared between cooperatives there may also be privacy concerns related to opening up data of higher granularity to people outside of the own cooperative. 
 %
 \begin{figure}[t!]
 	%\centering
@@ -60,9 +60,9 @@ The design links energy data with energy reduction actions taken (Figure~\ref{fi
 \end{figure}
 %
 Users with editing rights, typically board members, can  add energy reduction actions that the cooperative has taken, e.g., improvement of ventilation, lighting or heating systems, 
-and the related cost.
-Trusted energy or building management companies can also get editing rights to add energy reduction actions they took on behalf of the cooperative. 
-Added actions appear at the month when each action was taken and are listed below the graph. When clicking on an action in the list, the details of the action are shown.
+and related cost.
+Trusted energy or building management companies can be given editing rights to add energy reduction actions taken on behalf of the cooperative. 
+Actions taken are depicted per month and are listed below the graph. Clicking on an action provides more details.
 % 
 To make the impact of actions visible, users can compare the energy use of the viewed months to that of a previous year. This can be used e.g. by a cooperative to explore what energy reduction actions to take in the future by learning actions taken by other cooperatives and what the effects were in relation to costs.
 
@@ -77,10 +77,10 @@ To make the impact of actions visible, users can compare the energy use of the v
 %	\label{fig:Figure202_Housing_cooperatives_comparison}
 %\end{figure}
 
-The cooperatives that are registered for the app are displayed in a map or list view (Figure~Figure~\ref{fig:Figure201_Actions} b). Their icons are color coded (from red to green) based on each cooperative's energy performance, i.e. from high to low energy use per heated area, scaled according to the Swedish energy declaration for buildings\footnote{\url{http://www.boverket.se/sv/byggande/energideklaration/energideklarationens-innehall-och-sammanfattning/sammanfattningen-med-energiklasser/energiklasser-fran-ag/}}. 
+The cooperatives that are registered for the app are displayed in a map or list view (Figure~\ref{fig:Figure201_Actions} b). Their icons are colour coded (from red to green) based on each cooperative's energy performance, i.e. from high to low energy use per heated area, scaled according to the Swedish energy declaration for buildings\footnote{\url{http://www.boverket.se/sv/byggande/energideklaration/energideklarationens-innehall-och-sammanfattning/sammanfattningen-med-energiklasser/energiklasser-fran-ag/}}. 
 %  but it is calibrated to only include measured energy use for heating and hot water, which is the greatest part of the energy use. In the Swedish energy declarations, facilities electricity is also added but that often requires estimations of different factors to make the number comparable.
 % 
-Users can also see the energy performance as a number (in kWh/m$^2$), and the information about energy reduction actions of the cooperatives. %The number of actions is important to display to make energy reduction efforts of housing cooperatives with a high energy performance (e.g. due to poor construction of the building) visible. 
+Users can also see the energy performance as a number (in kWh/m$^2$), and the information about energy reduction actions of the cooperatives. %The number of actions is important to display to make energy reduction efforts of housing cooperatives with high energy performance (e.g. due to poor construction of the building) visible. 
 % 
 During stakeholder studies, energy managers in cooperative boards stressed the importance of knowing the difference between cooperatives in order to understand the difference in their energy performance. Thus, the design also includes information about cooperatives (Figure~\ref{fig:Figure204_Neighbourhood_average}) such as the number of apartments and heated areas in a cooperative, a building's construction year, and types of ventilations (e.g. with or without heat recovery).
 % 
@@ -165,9 +165,9 @@ With the aggregated energy data provided by the two local electricity consortia,
 
 Dynamic ToU signals are provided to facilitate users' self-consumption of local PV productions.
 They give clear indications to encourage or discourage electricity consumption at a certain moment based on the forecasted local renewable production level calculated with open weather forecast information (in particular solar radiation data) and the local rooftop PV production capacity. 
-The signals are at 3-hour intervals for the forthcoming 30 hours (Figure \ref{fig:tou} a), and are updated every 24 hours. A green smiley face signals a time slot suitable for self-consumption where the forecasted local PV production exceeds the current local consumption, while an orange frown face signals otherwise.  
+The signals are at 3-hour intervals for the forthcoming 30 hours (Figure \ref{fig:tou} a), and are updated every 24 hours. A green smiley face signals a time slot suitable for self-consumption where the forecasted local PV production exceeds the current local consumption, while an orange frowny face signals otherwise.  
 % 
-On a weekly basis, users get a summary of the proportion of their own household consumption that took place under green or orange ToU signals to allow them to reflect on their levels of self-consumption (Figure \ref{fig:tou} b). The same information is also provided at the consortia level to enable peer comparison. 
+On a weekly basis, users receive a summary of the proportion of their own household consumption that took place under green or orange ToU signals to allow them to reflect on their levels of self-consumption (Figure \ref{fig:tou} b). The same information is also provided at the consortia level to enable peer comparison. 
 
 \paragraph{Action Suggestions}
 % \label{sect:tips}
@@ -182,7 +182,7 @@ Some suggestions may seem obvious and trivial, but as indicated by literature, p
 % \subsubsection{Free choice and self-monitoring of energy conservation actions}
 \subruninhead{Free Choice and Self-monitoring of Energy Conservation Actions}
 
-The actions are not meant as prescriptions for what users should do but to present different ideas of what they can do (and how) in household practices. 
+Actions are not meant to prescribe what users should do but to present different ideas of what they can do (and how) in household practices. 
 Users can freely choose whether (and when) to take an action and possibly reschedule and repeat the action according to the needs and interests in their own context (Figure \ref{fig:actions}). After all, users are experts of their own reality. They also have an overview of their current, pending, and completed actions.
 A new action is suggested when one is completed. %After an action is in progress, the user may also postpone, abandon or indicate that the action is completed (Figure \ref{fig:actions} c). 
 When an action is scheduled, its reminder is triggered by time. Users' own choices of actions and the action processes facilitate the sense of autonomy which enhances and maintains motivation \cite{Ryan2000}.
@@ -208,7 +208,7 @@ When an action is scheduled, its reminder is triggered by time. Users' own choic
 \subruninhead{Promoting Motivation and Engagement}
 
 The design uses a number of elements to promote users' motivation and engagement. 
-The suggestions are tailored to the local context by local partners and focus groups. 
+Suggestions are tailored to the local context by local partners and focus groups. 
 Each action is accompanied by a short explanation, the entailed effort and impact (on a five-point scale) and the number of users taking this action. 
 The design encourages users to take small steps (and not to have too many actions at a time) and gives positive performance feedback. 
 In addition, users can invite household members, %  (Figure \ref{fig:invite}), 
